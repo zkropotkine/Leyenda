@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface LeyendaAppDelegate : UIResponder <UIApplicationDelegate>
-
+@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (strong, nonatomic) UIWindow *window;
 
 @end

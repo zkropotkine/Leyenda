@@ -7,11 +7,19 @@
 //
 
 #import "LeyendaAppDelegate.h"
+#import "LeyendaGridViewController.h"
 
 @implementation LeyendaAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
+    
+    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    LeyendaGridViewController *controller = (LeyendaGridViewController *)navigationController.topViewController;
+    //controller.managedObjectContext = self.managedObjectContext;
+    
     // Override point for customization after application launch.
     return YES;
 }

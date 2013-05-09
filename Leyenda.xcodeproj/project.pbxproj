@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA09394516C07FAF001775A4 /* Photos in Resources */ = {isa = PBXBuildFile; fileRef = DA09394416C07FAF001775A4 /* Photos */; };
+		DA09395116C082AE001775A4 /* LeyendaGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA09395016C082AE001775A4 /* LeyendaGridViewController.m */; };
+		DA09395416C0837D001775A4 /* LeyendaPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA09395316C0837D001775A4 /* LeyendaPhotoCell.m */; };
+		DA09395716C09281001775A4 /* LeyendaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA09395616C09281001775A4 /* LeyendaDetailViewController.m */; };
+		DA09396016C09C5E001775A4 /* MKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA09395F16C09C5E001775A4 /* MKViewController.m */; };
+		DA5A9789171FAB76008116AA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA5A9788171FAB76008116AA /* Localizable.strings */; };
 		DA5CA8A016A233F1001FA2D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5CA89F16A233F1001FA2D8 /* UIKit.framework */; };
 		DA5CA8A216A233F1001FA2D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5CA8A116A233F1001FA2D8 /* Foundation.framework */; };
 		DA5CA8A416A233F1001FA2D8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5CA8A316A233F1001FA2D8 /* CoreGraphics.framework */; };
@@ -23,6 +29,16 @@
 		DA5CA8C616A233F1001FA2D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5CA8A116A233F1001FA2D8 /* Foundation.framework */; };
 		DA5CA8CE16A233F1001FA2D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA5CA8CC16A233F1001FA2D8 /* InfoPlist.strings */; };
 		DA5CA8D116A233F1001FA2D8 /* LeyendaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5CA8D016A233F1001FA2D8 /* LeyendaTests.m */; };
+		DA5CA8DB16A234BC001FA2D8 /* leyendas2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA5CA8DA16A234BC001FA2D8 /* leyendas2.jpg */; };
+		DA5CA8DD16A28D83001FA2D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5CA8DC16A28D83001FA2D8 /* MapKit.framework */; };
+		DA5CA8E016A2B143001FA2D8 /* LeyendasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5CA8DF16A2B143001FA2D8 /* LeyendasViewController.m */; };
+		DA5CA8E716A3C0A2001FA2D8 /* MyAnnonation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5CA8E616A3C0A2001FA2D8 /* MyAnnonation.m */; };
+		DA5CA8EA16A3C144001FA2D8 /* Displaying_Pins_on_a_Map_ViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5CA8E916A3C144001FA2D8 /* Displaying_Pins_on_a_Map_ViewViewController.m */; };
+		DA5CA8EC16A3C45D001FA2D8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5CA8EB16A3C45D001FA2D8 /* CoreLocation.framework */; };
+		DAF0BF5016CA101900422D8F /* icono57.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF0BF4F16CA101900422D8F /* icono57.png */; };
+		DAF0BF5216CA102400422D8F /* icono114.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF0BF5116CA102400422D8F /* icono114.png */; };
+		DAF0BF5416CA106400422D8F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF0BF5316CA106400422D8F /* Default.png */; };
+		DAF72B9B16DF308400C1DA1F /* LeyendaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF72B9A16DF308400C1DA1F /* LeyendaModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +52,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA09394416C07FAF001775A4 /* Photos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Photos; path = "../../../../Downloads/ios6ptl-master/ch07/CollectionViewDemo/Photos"; sourceTree = "<group>"; };
+		DA09394F16C082AE001775A4 /* LeyendaGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendaGridViewController.h; sourceTree = "<group>"; };
+		DA09395016C082AE001775A4 /* LeyendaGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeyendaGridViewController.m; sourceTree = "<group>"; };
+		DA09395216C0837D001775A4 /* LeyendaPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendaPhotoCell.h; sourceTree = "<group>"; };
+		DA09395316C0837D001775A4 /* LeyendaPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeyendaPhotoCell.m; sourceTree = "<group>"; };
+		DA09395516C09281001775A4 /* LeyendaDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendaDetailViewController.h; sourceTree = "<group>"; };
+		DA09395616C09281001775A4 /* LeyendaDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeyendaDetailViewController.m; sourceTree = "<group>"; };
+		DA09395E16C09C5E001775A4 /* MKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKViewController.h; sourceTree = "<group>"; };
+		DA09395F16C09C5E001775A4 /* MKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKViewController.m; sourceTree = "<group>"; };
+		DA5A9788171FAB76008116AA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		DA5CA89B16A233F1001FA2D8 /* Leyenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leyenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5CA89F16A233F1001FA2D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DA5CA8A116A233F1001FA2D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +84,20 @@
 		DA5CA8CD16A233F1001FA2D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA5CA8CF16A233F1001FA2D8 /* LeyendaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeyendaTests.h; sourceTree = "<group>"; };
 		DA5CA8D016A233F1001FA2D8 /* LeyendaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeyendaTests.m; sourceTree = "<group>"; };
+		DA5CA8DA16A234BC001FA2D8 /* leyendas2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leyendas2.jpg; sourceTree = "<group>"; };
+		DA5CA8DC16A28D83001FA2D8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DA5CA8DE16A2B143001FA2D8 /* LeyendasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendasViewController.h; sourceTree = "<group>"; };
+		DA5CA8DF16A2B143001FA2D8 /* LeyendasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeyendasViewController.m; sourceTree = "<group>"; };
+		DA5CA8E516A3C0A2001FA2D8 /* MyAnnonation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnonation.h; sourceTree = "<group>"; };
+		DA5CA8E616A3C0A2001FA2D8 /* MyAnnonation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnonation.m; sourceTree = "<group>"; };
+		DA5CA8E816A3C143001FA2D8 /* Displaying_Pins_on_a_Map_ViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Displaying_Pins_on_a_Map_ViewViewController.h; sourceTree = "<group>"; };
+		DA5CA8E916A3C144001FA2D8 /* Displaying_Pins_on_a_Map_ViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Displaying_Pins_on_a_Map_ViewViewController.m; sourceTree = "<group>"; };
+		DA5CA8EB16A3C45D001FA2D8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DAF0BF4F16CA101900422D8F /* icono57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono57.png; sourceTree = "<group>"; };
+		DAF0BF5116CA102400422D8F /* icono114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono114.png; sourceTree = "<group>"; };
+		DAF0BF5316CA106400422D8F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DAF72B9916DF308400C1DA1F /* LeyendaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendaModel.h; sourceTree = "<group>"; };
+		DAF72B9A16DF308400C1DA1F /* LeyendaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeyendaModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +105,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5CA8EC16A3C45D001FA2D8 /* CoreLocation.framework in Frameworks */,
+				DA5CA8DD16A28D83001FA2D8 /* MapKit.framework in Frameworks */,
 				DA5CA8A016A233F1001FA2D8 /* UIKit.framework in Frameworks */,
 				DA5CA8A216A233F1001FA2D8 /* Foundation.framework in Frameworks */,
 				DA5CA8A416A233F1001FA2D8 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +129,13 @@
 		DA5CA89016A233F1001FA2D8 = {
 			isa = PBXGroup;
 			children = (
+				DAF0BF5316CA106400422D8F /* Default.png */,
+				DAF0BF5116CA102400422D8F /* icono114.png */,
+				DAF0BF4F16CA101900422D8F /* icono57.png */,
+				DA09394416C07FAF001775A4 /* Photos */,
+				DA5CA8EB16A3C45D001FA2D8 /* CoreLocation.framework */,
+				DA5CA8DC16A28D83001FA2D8 /* MapKit.framework */,
+				DA5CA8DA16A234BC001FA2D8 /* leyendas2.jpg */,
 				DA5CA8A516A233F1001FA2D8 /* Leyenda */,
 				DA5CA8C916A233F1001FA2D8 /* LeyendaTests */,
 				DA5CA89E16A233F1001FA2D8 /* Frameworks */,
@@ -120,8 +169,24 @@
 				DA5CA8AE16A233F1001FA2D8 /* LeyendaAppDelegate.h */,
 				DA5CA8AF16A233F1001FA2D8 /* LeyendaAppDelegate.m */,
 				DA5CA8B716A233F1001FA2D8 /* MainStoryboard.storyboard */,
+				DA5CA8E516A3C0A2001FA2D8 /* MyAnnonation.h */,
+				DA5CA8E616A3C0A2001FA2D8 /* MyAnnonation.m */,
+				DA5CA8E816A3C143001FA2D8 /* Displaying_Pins_on_a_Map_ViewViewController.h */,
+				DA5CA8E916A3C144001FA2D8 /* Displaying_Pins_on_a_Map_ViewViewController.m */,
+				DA5CA8DE16A2B143001FA2D8 /* LeyendasViewController.h */,
+				DA5CA8DF16A2B143001FA2D8 /* LeyendasViewController.m */,
 				DA5CA8BA16A233F1001FA2D8 /* LeyendaViewController.h */,
 				DA5CA8BB16A233F1001FA2D8 /* LeyendaViewController.m */,
+				DA09394F16C082AE001775A4 /* LeyendaGridViewController.h */,
+				DA09395016C082AE001775A4 /* LeyendaGridViewController.m */,
+				DA09395516C09281001775A4 /* LeyendaDetailViewController.h */,
+				DA09395616C09281001775A4 /* LeyendaDetailViewController.m */,
+				DAF72B9916DF308400C1DA1F /* LeyendaModel.h */,
+				DAF72B9A16DF308400C1DA1F /* LeyendaModel.m */,
+				DA09395216C0837D001775A4 /* LeyendaPhotoCell.h */,
+				DA09395316C0837D001775A4 /* LeyendaPhotoCell.m */,
+				DA09395E16C09C5E001775A4 /* MKViewController.h */,
+				DA09395F16C09C5E001775A4 /* MKViewController.m */,
 				DA5CA8A616A233F1001FA2D8 /* Supporting Files */,
 			);
 			path = Leyenda;
@@ -137,6 +202,7 @@
 				DA5CA8B116A233F1001FA2D8 /* Default.png */,
 				DA5CA8B316A233F1001FA2D8 /* Default@2x.png */,
 				DA5CA8B516A233F1001FA2D8 /* Default-568h@2x.png */,
+				DA5A9788171FAB76008116AA /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -237,6 +303,12 @@
 				DA5CA8B416A233F1001FA2D8 /* Default@2x.png in Resources */,
 				DA5CA8B616A233F1001FA2D8 /* Default-568h@2x.png in Resources */,
 				DA5CA8B916A233F1001FA2D8 /* MainStoryboard.storyboard in Resources */,
+				DA5CA8DB16A234BC001FA2D8 /* leyendas2.jpg in Resources */,
+				DA09394516C07FAF001775A4 /* Photos in Resources */,
+				DAF0BF5016CA101900422D8F /* icono57.png in Resources */,
+				DAF0BF5216CA102400422D8F /* icono114.png in Resources */,
+				DAF0BF5416CA106400422D8F /* Default.png in Resources */,
+				DA5A9789171FAB76008116AA /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +346,14 @@
 				DA5CA8AC16A233F1001FA2D8 /* main.m in Sources */,
 				DA5CA8B016A233F1001FA2D8 /* LeyendaAppDelegate.m in Sources */,
 				DA5CA8BC16A233F1001FA2D8 /* LeyendaViewController.m in Sources */,
+				DA5CA8E016A2B143001FA2D8 /* LeyendasViewController.m in Sources */,
+				DA5CA8E716A3C0A2001FA2D8 /* MyAnnonation.m in Sources */,
+				DA5CA8EA16A3C144001FA2D8 /* Displaying_Pins_on_a_Map_ViewViewController.m in Sources */,
+				DA09395116C082AE001775A4 /* LeyendaGridViewController.m in Sources */,
+				DA09395416C0837D001775A4 /* LeyendaPhotoCell.m in Sources */,
+				DA09395716C09281001775A4 /* LeyendaDetailViewController.m in Sources */,
+				DA09396016C09C5E001775A4 /* MKViewController.m in Sources */,
+				DAF72B9B16DF308400C1DA1F /* LeyendaModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +459,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Leyenda/Leyenda-Prefix.pch";
 				INFOPLIST_FILE = "Leyenda/Leyenda-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,7 +472,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Leyenda/Leyenda-Prefix.pch";
 				INFOPLIST_FILE = "Leyenda/Leyenda-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -448,6 +532,7 @@
 				DA5CA8D616A233F1001FA2D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA5CA8D716A233F1001FA2D8 /* Build configuration list for PBXNativeTarget "LeyendaTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +541,7 @@
 				DA5CA8D916A233F1001FA2D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
