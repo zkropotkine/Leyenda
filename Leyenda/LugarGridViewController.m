@@ -1,27 +1,27 @@
 //
-//  LeyendaGridViewController.m
+//  LugarGridViewController.m
 //  Leyenda
 //
-//  Created by Daniel Rodriguez on 2/4/13.
+//  Created by Daniel Rodriguez on 5/11/13.
 //  Copyright (c) 2013 Daniel Rodriguez. All rights reserved.
 //
 
-#import "LeyendaGridViewController.h"
+#import "LugarGridViewController.h"
 #import "LeyendaPhotoCell.h"
 #import "LeyendaDetailViewController.h"
 #import "LeyendaModel.h"
 
-@interface LeyendaGridViewController ()
+@interface LugarGridViewController ()
 @property (strong, nonatomic) NSArray *photosList;
 @property (strong, nonatomic) NSMutableDictionary *photosCache;
 @property (strong, nonatomic) LeyendaModel *leyendaModel;
 - (IBAction)returnHomePage:(id)sender;
 @end
 
-@implementation LeyendaGridViewController
+@implementation LugarGridViewController
 
 -(NSString*) photosDirectory {
-    return [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Photos/Leyendas"];
+    return [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Photos/Lugares"];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -48,9 +48,9 @@
         });
     });
     
-    self.title = @"Leyendas";
+    self.title = @"Lugares";
     self.navigationItem.hidesBackButton = false;
-
+    
     
     UIBarButtonItem *btn=[[UIBarButtonItem alloc]init];
     btn.title=@"Back";
@@ -152,4 +152,5 @@
 - (IBAction)returnHomePage:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 @end

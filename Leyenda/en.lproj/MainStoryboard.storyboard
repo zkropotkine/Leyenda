@@ -193,7 +193,6 @@
         <!--Leyenda Grid View Controller - Title-->
         <scene sceneID="2hQ-Or-486">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RRU-rD-ZGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="RQt-AO-YzL" customClass="LeyendaGridViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="OuK-nZ-MAr">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
@@ -259,6 +258,7 @@
                         <segue destination="BRC-2R-UvT" kind="push" identifier="detailLeyendSegue" id="mEn-iz-FQ6"/>
                     </connections>
                 </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RRU-rD-ZGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2616" y="-371"/>
         </scene>
@@ -410,10 +410,10 @@
             </objects>
             <point key="canvasLocation" x="2008" y="113"/>
         </scene>
-        <!--Leyenda Grid View Controller - Title-->
+        <!--Lugar Grid View Controller - Title-->
         <scene sceneID="HkZ-OV-XzF">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="dOK-BA-pG8" customClass="LeyendaGridViewController" sceneMemberID="viewController">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="dOK-BA-pG8" customClass="LugarGridViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="XId-W6-ybl">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -485,6 +485,7 @@
         <!--Leyenda Detail View Controller - Title-->
         <scene sceneID="d31-k4-b7e">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7x-mI-jH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="qGH-Or-sEX" customClass="LeyendaDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IwJ-Hd-Z1p">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
@@ -517,7 +518,6 @@
                         <outlet property="leyendaTitle" destination="Rqk-Hl-oOJ" id="Ar4-Ih-iwE"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U7x-mI-jH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3359" y="113"/>
         </scene>
@@ -555,6 +555,12 @@
         </class>
         <class className="LeyendaViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LeyendaViewController.h"/>
+        </class>
+        <class className="LugarGridViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LugarGridViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="returnHomePage:"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
