@@ -40,7 +40,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="25j-jx-DQY" kind="push" identifier="LugaresSegue" id="eus-bs-la1"/>
+                                    <segue destination="xwi-UG-wpF" kind="modal" id="HM9-kI-9OY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOq-aO-8D9">
@@ -193,6 +193,7 @@
         <!--Leyenda Grid View Controller - Title-->
         <scene sceneID="2hQ-Or-486">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RRU-rD-ZGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="RQt-AO-YzL" customClass="LeyendaGridViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="OuK-nZ-MAr">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
@@ -258,9 +259,8 @@
                         <segue destination="BRC-2R-UvT" kind="push" identifier="detailLeyendSegue" id="mEn-iz-FQ6"/>
                     </connections>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RRU-rD-ZGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2568" y="-347"/>
+            <point key="canvasLocation" x="2616" y="-371"/>
         </scene>
         <!--Leyenda Detail View Controller - Title-->
         <scene sceneID="WD9-cd-RKi">
@@ -299,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43w-6r-R5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3211" y="-347"/>
+            <point key="canvasLocation" x="3331" y="-377"/>
         </scene>
         <!--Displaying Pins on a Map View View Controller-->
         <scene sceneID="aKQ-Vp-0rk">
@@ -342,52 +342,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rFM-jJ-2j6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="796"/>
-        </scene>
-        <!--View Controller - Title-->
-        <scene sceneID="rJP-90-Asg">
-            <objects>
-                <viewController id="25j-jx-DQY" customClass="MKViewController" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="hPN-3r-I9n">
-                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zNc-KL-QN4">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="LcZ-8y-7br" customClass="LeyendaPhotoCell">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dM5-Fk-9eL">
-                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </view>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                                <constraints>
-                                    <constraint firstItem="dM5-Fk-9eL" firstAttribute="trailing" secondItem="LcZ-8y-7br" secondAttribute="trailing" type="default" id="20H-Gj-aqd"/>
-                                    <constraint firstItem="dM5-Fk-9eL" firstAttribute="leading" secondItem="LcZ-8y-7br" secondAttribute="leading" type="default" id="5lN-Z9-w4C"/>
-                                    <constraint firstItem="dM5-Fk-9eL" firstAttribute="top" secondItem="LcZ-8y-7br" secondAttribute="top" type="default" id="8Xu-vE-mGq"/>
-                                    <constraint firstItem="dM5-Fk-9eL" firstAttribute="bottom" secondItem="LcZ-8y-7br" secondAttribute="bottom" type="default" id="ayb-L5-5TL"/>
-                                </constraints>
-                            </collectionViewCell>
-                        </cells>
-                    </collectionView>
-                    <navigationItem key="navigationItem" title="Title" id="5V6-0Q-wLQ"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eHk-q0-gbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1918" y="89"/>
+            <point key="canvasLocation" x="2022" y="716"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="krV-GL-LeN">
@@ -431,7 +386,140 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nkf-CC-skT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1918" y="-347"/>
+            <point key="canvasLocation" x="1898" y="-363"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qPR-cu-njW">
+            <objects>
+                <navigationController id="xwi-UG-wpF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="a3O-xT-krH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="CWr-wG-yph">
+                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="dOK-BA-pG8" kind="relationship" relationship="rootViewController" id="Ror-5z-RfU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8c0-55-T2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2008" y="113"/>
+        </scene>
+        <!--Leyenda Grid View Controller - Title-->
+        <scene sceneID="HkZ-OV-XzF">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="dOK-BA-pG8" customClass="LeyendaGridViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="XId-W6-ybl">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5dK-Db-MmP">
+                            <size key="itemSize" width="140" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="AkP-Gn-C0o" customClass="LeyendaPhotoCell">
+                                <rect key="frame" x="0.0" y="0.0" width="140" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="140" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YAF-OU-tnj">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="130" id="Hj1-Od-EKD"/>
+                                                <constraint firstAttribute="height" constant="72" id="j9u-dE-I7O"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEn-7H-L5T">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="125" id="4n0-A5-RGQ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="mEn-7H-L5T" secondAttribute="bottom" constant="3" id="VcY-M1-1S4"/>
+                                    <constraint firstItem="YAF-OU-tnj" firstAttribute="centerX" secondItem="AkP-Gn-C0o" secondAttribute="centerX" type="default" id="Vli-48-Vwv"/>
+                                    <constraint firstItem="YAF-OU-tnj" firstAttribute="top" secondItem="AkP-Gn-C0o" secondAttribute="top" type="default" id="Yau-gr-cTM"/>
+                                    <constraint firstItem="YAF-OU-tnj" firstAttribute="trailing" secondItem="mEn-7H-L5T" secondAttribute="trailing" type="default" id="jKS-Bi-OIw"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="nameLabel" destination="mEn-7H-L5T" id="H3g-C6-P3k"/>
+                                    <outlet property="photoView" destination="YAF-OU-tnj" id="LlS-u6-hdh"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="dOK-BA-pG8" id="fZJ-jT-hcx"/>
+                            <outlet property="delegate" destination="dOK-BA-pG8" id="Hrf-wA-GFJ"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Title" id="Dqm-0L-ll2">
+                        <barButtonItem key="leftBarButtonItem" title="Volver" id="ott-9r-T0n">
+                            <connections>
+                                <action selector="returnHomePage:" destination="dOK-BA-pG8" id="fEA-hM-Gya"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="qGH-Or-sEX" kind="push" identifier="detailLeyendSegue" id="bjD-yL-Zlb"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UrB-bY-8D4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2632" y="121"/>
+        </scene>
+        <!--Leyenda Detail View Controller - Title-->
+        <scene sceneID="d31-k4-b7e">
+            <objects>
+                <viewController id="qGH-Or-sEX" customClass="LeyendaDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IwJ-Hd-Z1p">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oml-nM-E9S">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="aeY-Kz-uIY"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Oml-nM-E9S" firstAttribute="bottom" secondItem="IwJ-Hd-Z1p" secondAttribute="bottom" type="default" id="SZu-01-wVE"/>
+                            <constraint firstItem="Oml-nM-E9S" firstAttribute="leading" secondItem="IwJ-Hd-Z1p" secondAttribute="leading" type="default" id="TN0-a4-06a"/>
+                            <constraint firstItem="Oml-nM-E9S" firstAttribute="trailing" secondItem="IwJ-Hd-Z1p" secondAttribute="trailing" type="default" id="xBd-ve-Ifw"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="Rqk-Hl-oOJ">
+                        <barButtonItem key="rightBarButtonItem" title="Ubicacion" id="wSv-wG-tEz"/>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="leyendaText" destination="Oml-nM-E9S" id="W63-3b-NrG"/>
+                        <outlet property="leyendaTitle" destination="Rqk-Hl-oOJ" id="Ar4-Ih-iwE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7x-mI-jH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3359" y="113"/>
         </scene>
     </scenes>
     <resources>
@@ -468,9 +556,6 @@
         <class className="LeyendaViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LeyendaViewController.h"/>
         </class>
-        <class className="MKViewController" superclassName="UICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MKViewController.h"/>
-        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
@@ -486,6 +571,9 @@
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
         </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -493,6 +581,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="kRZ-zp-jt1"/>
+        <segue reference="Grd-19-pcT"/>
     </inferredMetricsTieBreakers>
 </document>
