@@ -39,25 +39,59 @@
     /* Add it to our view */
     [self.view addSubview:self.myMapView];
     
-    /* This is just a sample location */
-    CLLocationCoordinate2D location =
-    CLLocationCoordinate2DMake(50.82191692907181, -0.13811767101287842);
+    NSLog(@"User's latitude is: %f", self.location.latitude );
+    NSLog(@"User's longitude is: %f", self.location.longitude );
     
-    /* Create the annotation using the location */
-    MyAnnonation *annotation =
-    [[MyAnnonation alloc] initWithCoordinates:location
-                                        title:@"My Title"
-                                     subTitle:@"My Sub Title"];
     
-    /* And eventually add it to the map */
-    [self.myMapView addAnnotation:annotation];
+    CLLocationCoordinate2D location;
+    if (self.location.latitude != 0 && self.location.longitude != 0) {
+        location = self.location;
+        /* Create the annotation using the location */
+        MyAnnonation *annotation =
+        [[MyAnnonation alloc] initWithCoordinates:location
+                                            title:@"My Title"
+                                         subTitle:@"My Sub Title"];
+        
+        /* And eventually add it to the map */
+        [self.myMapView addAnnotation:annotation];
+    } else {
+        NSString *stringsPath = [[NSBundle mainBundle] pathForResource:@"Coordinates" ofType:@"strings"];
+        NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:stringsPath];
+        NSMutableArray *annotations = [[NSMutableArray alloc] init];
+        
+        
+        for(id key in dictionary) {
+            NSString *keyName = key;
+            NSString *location = [dictionary objectForKey:key];
+            NSLog(@"key=%@ value=%@", keyName, location);
+            
+            NSString *locationName = [[keyName componentsSeparatedByString:@"Coord"] objectAtIndex:0];
+            NSString *latitude = [[location componentsSeparatedByString:@","] objectAtIndex:0];
+            NSString *longitude = [[location componentsSeparatedByString:@","] objectAtIndex:1];
+            
+            NSLog(@"%@",latitude);
+            NSLog(@"%@",longitude);
+            
+            CLLocationCoordinate2D currentlocation =
+            CLLocationCoordinate2DMake([latitude doubleValue], [longitude doubleValue]);
+            
+            MyAnnonation *annotation =
+            [[MyAnnonation alloc] initWithCoordinates:currentlocation
+                                                title:locationName
+                                                subTitle:locationName];
+            
+            [annotations addObject:annotation];
+        }
+        
+        /* And eventually add it to the map */
+        [self.myMapView addAnnotations:annotations];
+    }
     
     
     if ([CLLocationManager locationServicesEnabled]){
         self.myLocationManager = [[CLLocationManager alloc] init];
         self.myLocationManager.delegate = self;
         
-        self.myLocationManager.purpose = @"To provide functionality based on user's current location.";
         [self.myLocationManager startUpdatingLocation];
         NSLog(@"Deberia de jalar");
     } else {
@@ -93,6 +127,21 @@
     
     NSLog(@"Latitude = %f", newLocation.coordinate.latitude);
     NSLog(@"Longitude = %f", newLocation.coordinate.longitude);
+    
+    
+    CLLocationCoordinate2D newcordinate =   CLLocationCoordinate2DMake(20.715336, -103.36146);
+    CLLocationCoordinate2D oldcordinate =   CLLocationCoordinate2DMake(20.718869,-103.360675);
+    
+    MKMapPoint * pointsArray =
+    malloc(sizeof(CLLocationCoordinate2D)*2);
+    
+    pointsArray[0]= MKMapPointForCoordinate(oldcordinate);
+    pointsArray[1]= MKMapPointForCoordinate(newcordinate);
+    
+    MKPolyline *  routeLine = [MKPolyline polylineWithPoints:pointsArray count:2];
+    free(pointsArray);
+    
+    [self.myMapView addOverlay:routeLine]; 
     
 }
 

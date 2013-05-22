@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface LeyendaModel : NSObject
 @property(strong, nonatomic) NSString *description;
 @property(strong, nonatomic) NSString *title;
+@property(assign, nonatomic) CLLocationCoordinate2D location;
 
--(id)initWithDescription:(NSString *)descr title:(NSString *)title;
+-(id)initWithDescription:(NSString *)descr title:(NSString *)title location:(CLLocationCoordinate2D)location;
 @end

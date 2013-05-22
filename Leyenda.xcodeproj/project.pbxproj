@@ -13,6 +13,7 @@
 		DA09395716C09281001775A4 /* LeyendaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA09395616C09281001775A4 /* LeyendaDetailViewController.m */; };
 		DA09396016C09C5E001775A4 /* MKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA09395F16C09C5E001775A4 /* MKViewController.m */; };
 		DA145A00173F2F4B00ED030C /* LugarGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1459FF173F2F4B00ED030C /* LugarGridViewController.m */; };
+		DA4DAA7C174353DA00F27732 /* Coordinates.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA4DAA7B174353DA00F27732 /* Coordinates.strings */; };
 		DA5A9789171FAB76008116AA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA5A9788171FAB76008116AA /* Localizable.strings */; };
 		DA5CA8A016A233F1001FA2D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5CA89F16A233F1001FA2D8 /* UIKit.framework */; };
 		DA5CA8A216A233F1001FA2D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5CA8A116A233F1001FA2D8 /* Foundation.framework */; };
@@ -64,6 +65,7 @@
 		DA09395F16C09C5E001775A4 /* MKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKViewController.m; sourceTree = "<group>"; };
 		DA1459FE173F2F4B00ED030C /* LugarGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LugarGridViewController.h; sourceTree = "<group>"; };
 		DA1459FF173F2F4B00ED030C /* LugarGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LugarGridViewController.m; sourceTree = "<group>"; };
+		DA4DAA7B174353DA00F27732 /* Coordinates.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Coordinates.strings; sourceTree = "<group>"; };
 		DA5A9788171FAB76008116AA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		DA5CA89B16A233F1001FA2D8 /* Leyenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leyenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5CA89F16A233F1001FA2D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				DA5CA8A716A233F1001FA2D8 /* Leyenda-Info.plist */,
+				DA4DAA7B174353DA00F27732 /* Coordinates.strings */,
 				DA5CA8A816A233F1001FA2D8 /* InfoPlist.strings */,
 				DA5CA8AB16A233F1001FA2D8 /* main.m */,
 				DA5CA8AD16A233F1001FA2D8 /* Leyenda-Prefix.pch */,
@@ -314,6 +317,7 @@
 				DAF0BF5216CA102400422D8F /* icono114.png in Resources */,
 				DAF0BF5416CA106400422D8F /* Default.png in Resources */,
 				DA5A9789171FAB76008116AA /* Localizable.strings in Resources */,
+				DA4DAA7C174353DA00F27732 /* Coordinates.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -51,7 +51,6 @@
     self.title = @"Leyendas";
     self.navigationItem.hidesBackButton = false;
 
-    
     UIBarButtonItem *btn=[[UIBarButtonItem alloc]init];
     btn.title=@"Back";
     self.navigationItem.backBarButtonItem=btn;
@@ -79,8 +78,34 @@
     
     NSString *photoFilePath = [[self photosDirectory] stringByAppendingPathComponent:photoName];
     
-    cell.nameLabel.text =[photoName stringByDeletingPathExtension];
+    NSString *string = [photoName stringByDeletingPathExtension];
     
+    NSLog(@"string == %@", string);
+    
+    NSRange rangeToSearch = NSMakeRange(0, [string length]); // get a range without the space character
+    NSRange rangeOfSecondToLastSpace = [string rangeOfString:@" " options:NSBackwardsSearch range:rangeToSearch];
+    
+    if (rangeOfSecondToLastSpace.length > 0 && rangeOfSecondToLastSpace.location < rangeToSearch.length) {
+        NSString *spaceReplacement = @"\n";
+        NSString *result = [string stringByReplacingCharactersInRange:rangeOfSecondToLastSpace withString:spaceReplacement];
+    
+        NSLog(@"replacedString == %@", result);
+        
+        string = result;
+    }
+    /*if ([string hasSuffix:@" "]) {
+        NSString *spaceReplacement = @"\n";
+        NSString *replacedString = [[string substringToIndex:
+                                     [string length]] stringByAppendingString:spaceReplacement];
+        NSLog(@"replacedString == %@", replacedString);
+        string = replacedString;
+    }*/
+    
+    
+    cell.nameLabel.text = string;
+    cell.nameLabel.font = [UIFont systemFontOfSize:13.0];
+    cell.nameLabel.numberOfLines = 0;
+        
     __block UIImage* thumbImage = [self.photosCache objectForKey:photoName];
     cell.photoView.image = thumbImage;
     
@@ -89,9 +114,9 @@
             
             UIImage *image = [UIImage imageWithContentsOfFile:photoFilePath];
             
-            UIGraphicsBeginImageContext(CGSizeMake(128.0f, 128.0f));
+            UIGraphicsBeginImageContext(CGSizeMake(150.0f, 150.0f));
             
-            [image drawInRect:CGRectMake(0, 0, 128.0f, 128.0f)];
+            [image drawInRect:CGRectMake(0, 0, 150.0f, 150.0f)];
             
             thumbImage = UIGraphicsGetImageFromCurrentImageContext();
             
@@ -138,15 +163,35 @@
     
     NSString *photoName = [self.photosList objectAtIndex:selectedIndexPath.row];
     
-    NSString *subString = [[photoName componentsSeparatedByString:@"."] objectAtIndex:0];
+    NSString *photoNameSimple = [[photoName componentsSeparatedByString:@"."] objectAtIndex:0];
+    
+    NSMutableString *locationKey = [NSMutableString stringWithString:photoNameSimple];
+    [locationKey appendString:@"Coord"];
+    
+    NSLog(@"%@", locationKey);
+    
+    NSString *leyendaText = NSLocalizedString(photoNameSimple, @"");
+    NSString *leyendaLocation = NSLocalizedString(locationKey, @"");
+    
+    CLLocationCoordinate2D location;
+    
+    if (locationKey == nil) {
+        NSString *latitude = [[leyendaLocation componentsSeparatedByString:@","] objectAtIndex:0];
+        NSString *longitude = [[leyendaLocation componentsSeparatedByString:@","] objectAtIndex:1];
+        
+        NSLog(@"%@",leyendaLocation);
+        NSLog(@"%@",latitude);
+        NSLog(@"%@",longitude);
+        
+        location = CLLocationCoordinate2DMake([latitude doubleValue], [longitude doubleValue]);
+    } else {
+        location = CLLocationCoordinate2DMake(20.675672, -103.348861);
+    }
     
     LeyendaDetailViewController *controller = segue.destinationViewController;
     
+    controller.leyendaModel = [[LeyendaModel alloc] initWithDescription:leyendaText title:photoNameSimple location:location];
     //controller.photoPath = [[self photosDirectory] stringByAppendingPathComponent:photoName];
-    
-    NSString *localizedHelloString = NSLocalizedString(subString, @"");
-    
-    controller.leyendaModel = [[LeyendaModel alloc] initWithDescription:localizedHelloString title:subString];
 }
 
 - (IBAction)returnHomePage:(id)sender {

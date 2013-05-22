@@ -7,6 +7,7 @@
 //
 
 #import "LeyendaDetailViewController.h"
+#import "Displaying_Pins_on_a_Map_ViewViewController.h"
 
 @interface LeyendaDetailViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -40,7 +41,23 @@
     
     self.leyendaText.text = self.leyendaModel.description;
     self.leyendaTitle.title = self.leyendaModel.title;
+    
+    
 }
+
+-(void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:@"mapDetailSegue" sender:indexPath];
+}
+
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {    
+    Displaying_Pins_on_a_Map_ViewViewController *controller = segue.destinationViewController;
+    
+    controller.location = self.leyendaModel.location;
+}
+
+
+
 
 - (void)didReceiveMemoryWarning
 {

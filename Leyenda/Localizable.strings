@@ -1,9 +1,188 @@
-/* 
-  Localizable.strings
-  Leyenda
+/*
+ Localizable.strings
+ Leyenda
+ 
+ Created by Daniel Rodriguez on 4/17/13.
+ Copyright (c) 2013 Daniel Rodriguez. All rights reserved.
+ */
+"Hola" = "Hace muchos años en la vieja Guadalajara, había una bella casa de muchos balcones y por vecino tenían el austero convento, de Santa María de Gracia, las ventanas de las celdas daban a lo que hoy se conoce como el rincón del diablo.
+Una noche como cualquier otra las monjas se retiraron a su celda, una de ellas escuchó un ruido y murmullos, al asomarse por su ventana, cuán grande fue su espanto, un grupo de personas, una cruz boca abajo, el simbolo del diablo, ¿qué sucedía en esa oscura casa? Adoradores del diablo vio la monja asustada apretando entre sus manos un Cristo contuvo el grito de terror, y salió con temor a alertar a las autoridades del convento, estos en un principio se mostraron incrédulos, pero como siempre hay que ser precavidos decidieron investigar, en la siguiente noche vistiendo capas negras para confundirse con la noche esperaron y esperaron, de pronto se escucharon los murmullos, cánticos tal vez se acercaron con sigilo y cuál fue su terror, sangre y el llanto de una cabra, que sacrificaban, en ese mismo sitio
+y para escarmiento de otros adoradores, se condenó a muerte a los hechiceros, a la horca. Sin embargo el lugar quedó un poco maldito un poco embrujado, pensaban en aquel entonces, la gente que se atrevía a pasar se santiguaba rogando por que el diablo no le asechara, años pasaron sin mayor novedad, de vez en cuando el viajero que pasa se encuentra con un hombre de negro que pregunta la hora al caminante, algunos contestan y él junto con estas palabras de agradecimiento el encapuchado se quita la capa y contesta: “dichoso tú que sabes la hora de tu muerte”, mostrando su rostro rojo encendido lleno de cicatrices. Más de un muerto en el callejón del diablo de los que se atreven a caminar a deshoras por esa calle y no se santiguan al pasar, sin tomar en cuenta los terribles hechos que ahí sucedieron años atrás, ¿será que el hombre de negro es algún adorador del diablo en busca de venganza? ¿o será un alma en pena de las muchas que la innquisión se llevó?";
+"HolaCoord" = "20.715336,-103.36146";
 
-  Created by Daniel Rodriguez on 4/17/13.
-  Copyright (c) 2013 Daniel Rodriguez. All rights reserved.
-*/
-"Hola" = "Hace muchos años en la vieja Guadalajara, había una bella casa de muchos balcones y por vecino tenían el austero convento, de Santa María de Gracia, las ventanas de las celdas daban a lo que hoy se conoce como el rincón del diablo. 
-    Una noche como cualquier otra las monjas se retiraron a su celda, una de ellas escuchó un ruido y murmullos, al asomarse por su ventana, cuán grande fue su espanto, un grupo de personas, una cruz boca abajo, el simbolo del diablo, ¿qué sucedía en esa oscura casa? Adoradores del diablo vio la monja asustada apretando entre sus manos un Cristo contuvo el grito de terror, y salió con temor a alertar a las autoridades del convento, estos en un principio se mostraron incrédulos, pero como siempre hay que ser precavidos decidieron investigar, en la siguiente noche vistiendo capas negras para confundirse con la noche esperaron y esperaron, de pronto se escucharon los murmullos, cánticos tal vez se acercaron con sigilo y cuál fue su terror, sangre y el llanto de una cabra, que sacrificaban, en ese mismo sitio y para escarmiento de otros adoradores, se condenó a muerte a los hechiceros, a la horca. Sin embargo el lugar quedó un poco maldito un poco embrujado, pensaban en aquel entonces, la gente que se atrevía a pasar se santiguaba rogando por que el diablo no le asechara, años pasaron sin mayor novedad, de vez en cuando el viajero que pasa se encuentra con un hombre de negro que pregunta la hora al caminante, algunos contestan y él junto con estas palabras de agradecimiento el encapuchado se quita la capa y contesta: “dichoso tú que sabes la hora de tu muerte”, mostrando su rostro rojo encendido lleno de cicatrices. Más de un muerto en el callejón del diablo de los que se atreven a caminar a deshoras por esa calle y no se santiguan al pasar, sin tomar en cuenta los terribles hechos que ahí sucedieron años atrás, ¿será que el hombre de negro es algún adorador del diablo en busca de venganza? ¿o será un alma en pena de las muchas que la innquisión se llevó?";
+"Caída del Degollado" = "El teatro Degollado es un hermoso edificio por dentro podemos ver sus balcones dorados, con un hermoso mural que representa la divina comedia.
+Para cualquiera que haya asistido a este hermoso edificio, podrá corroborar lo que les digo:algo que atrae la vista es un águila colosal dorada, que parece hacer de guardia del lugar, con las alas desplegadas, la bandera de México en sus garras, y en el pico una cadena de hierro muy pesada, la vista del águila cubre todo el teatro, y seguro es tremenda protectora del arte y la cultura, en ella esta el corazón del teatro, al momento que suelte la cadena, ya sea por una indigna presentación o por azares del destino, el teatro caerá de tal manera que no quedará piedra sobre piedra.  Habrá que estar atento a no faltar el respeto al teatro, y mirar con cuidado al águila pues a la primer señal del águila convendría abandonar el teatro antes de que se derrumbe.";
+"Caída del DegolladoCoord" = "20.677077, -103.344988";
+
+"Casa de la Condenada" = "En la calle de Juan Manuel, entre las tiendas hay una casa que no esta habitada desde hace muchos años. Se dice que en esa casa vivía una mujer, la gente creía estaba poseída o endemoniada, por su mala reputación, por que se la pasaba atacando a la religión y leyendo libros prohibidos. Cuando la mujer iba a morir, las únicas que la acompañaron fue su mejor amiga y una sirvienta. La joven en lugar de pedir un padre pidió que en sus manos pusieran el libro de “las ruinas de Palmira” libro prohibido.
+La mujer murió invocando al diablo y maldiciendo a Dios, en el velorio nadie se apareció por miedo solo la sirvienta y la amiga que escucharon ruidos estruendosos donde estaba la muerta, al final en la madrugada cuando lograron abrir la puerta el cuerpo no estaba. Desde entonces, mucha gente jura que al pasar por esa casa se escuchan gemidos y ruidos, y a veces tras las ventanas se ve a una mujer leyendo un libro. Por temor al diablo la gente camina por la calle en lugar de la banqueta y desde entonces esa casa nunca ha sido habitada.
+Algunos dicen que en realidad el cuerpo lo trasladaron en medio de la noche los familiares sin que nadie se diera cuenta por temor que la gente del barrio lo apedreara o lo maldijera, pero nadie vio nada y uno nunca sabe. Mientras tanto solo te podemos recomendar que cuando pases por la casa de la condenada te persignes y bajes de la banqueta.";
+"Casa de la CondenadaCoord" = "20.678887,-103.34749";
+
+"Casa de los Perros" = "Cuentan que por amor se hacen promesas que no se pueden cumplir y cuentan que por despecho se juran venganzas que se llevan a la tumba, la historia de la casa de los perros nos hace preguntarnos si es una historia de amor, de despecho o de celos.
+La casa de los perros hoy museo del periodismo es un hermoso edificio ubicado en avenida Alcalde cerca del santuario, probablemente lo mas llamativo son las estatuas de perros tan bien logradas ubicadas en la parte alta de la casa. Pero ¿Qué opinarías de tales esculturas si te dijera que lo que hacen es custodiar un rico tesoro y que atacarán a cualquiera que se atreva a robarlo? Pues así es.
+
+La historia empieza mucho más atrás con el primer dueño de la casa, un hombre rico llamado Jesús Flores. Don Jesús hombre entrado en años, viudo, decidió casarse por segunda vez con una mujer hermosa, elegante y muy inteligente aunque también cabe decirlo algo interesada, la señorita Anita Rubio, ella aceptó casarse solo si el viudo le construía la casa más hermosa de la calle, fue entonces cuando Don Jesús construyó la casa de los perros, casa enorme con un gran patio interior, varias cocheras, caballerizas, salón de baile y piscina.
+
+Coronando la elegante casa, se colocaron las estatuas de dos perros pointer de metal una de cada lado mirando al norte y al sur de la ciudad, figuras que la misma Ana habías elegido y que don Jesús había adquirido para cumplir el capricho de su bella mujer. Ana de carácter feliz contagiaba a don Jesús la felicidad y hacían bailes y viajes continuos, en uno de esos tantos viajes cuentan que estuvieron a punto de morir a manos de una tormenta, tal fue el temor de perder la vida que se prometieron que si alguno de ellos moría, el otro iría a rezarle en su aniversario nueve rosarios. La suerte es caprichosa y quiso que ambos se salvaran de esa tormenta, continuaron su vida alegre durante varios años dejando atrás el terrible incidente.
+
+Al final don Jesús murió y doña Ana olvidó su promesa, se volvió a casar, esta vez con José Cuervo, la casa quedo sola resguardada por los hermosos perros pointer. Desde entonces se dice que aquel que se atreva a ir al panteón cumplir la promesa de Anita y recé nueve rosarios enfrente de la tumba de don Jesús, podrá recibir la casa por herencia, otros dicen que basta con que los reces en la misma casa de los perros. Sin embargo todos los que lo han intentado han fallado, al preguntarles que sucede solo contestan derrotados que mientras rezaban comenzaba a escuchar una voz preguntando por su amada Ana y si querían la casa para vivir con su amada. Otros quienes han intentado rezar en la casa de los perros juran haber escuchado no solo a don Jesús sino los ladridos y gruñidos de los perros que cobrando vida se mueven por toda la casa.";
+"Casa de los PerrosCoord" = "20.680008, -103.347634";
+
+"Casa Encantada" = "En la esquina de Juan Manuel y 16 de septiembre solía haber una casa muy grande, en ella vivía la familia Gordoa originaria de Zacatecas, se dice que un día en pleno desayuno, entró un hombre al comedor, el extraño traía un mensaje de Zacatecas: la señora Gordoa cabeza de la familia estaba muy enferma,  a punto de la muerte.
+La familia sin pensarlo dos veces,  en movimientos rápidos abandonaron la casa dejando el desayuno y la mesa puesta, y cerraron la casa a piedra y cal, seguros de que volverían sin embargo pasaron varios días, que se hicieron meses y años, nunca se supo más de la familia. La casa continuo cerrada por más de 50 años, la gente  de lugar comenzó a llamarla la casa encantada, sin quién la heredara la casa terminó en manos de la sra. Refugio de Villa,  esposa de un escritor.  Se dice que el joven Jesús, hijo de la pareja fue a conocer la casa un día, con mucho trabajo logró abrir la puerta y al asomarse dentro de la casa ¿qué miró? El área del desayuno estaba intacta, igual al día que los Gordoa recibieron la noticia que les hizo abandonar su hogar.  La comida, las ollas, el café…todo, tal fue la sorpresa del joven que cerró la casa y regresó silenciosamente sobre sus pasos.";
+"Casa EncantadaCoord" = "20.678887,-103.34749";
+
+"Dama Enlutada" = "Una leyenda que circula desde el siglo XIV alrededor  de las 11:00 de la noche por Av. Alcalde desde la Catedral hacia el Santuario, se ve una mujer vestida de negro, de muy buen cuerpo y elegantes ropas caminando por la calle.
+Alguno que otro hombre saliendo de las cantinas puede que la vea y cuentan que al seguirla y llamarla la mujer no responde, pero si la alcanzan el terror invade su cuerpo pues la mujer no tiene rostro definido, algunos dicen que parece una calavera otros que un caballo, otros que simplemente la mujer desaparece al final del santuario.";
+"Dama EnlutadaCoord" = "20.684574, -103.347903";
+
+"El Diablo en San Juan" = "El obispo Cabañas, fundador del  hospicio, casa de la misericordia, solía salir a caminar por San Juan de Dios, vistiendo su hábito y una cruz al cuello.
+En una de sus caminatas se encontró con una persona vestida de negro que le impedía el paso al otro lado del río, al saludarla, el hombre le advirtió que el hospicio sería un lugar donde mucha gente sufriría, sería asesinada, y que se caería a pedazos durante una guerra
+El obispo escuchaba, mientras la sombra proponía evitar la desgracia si el sacerdote se inclinaba y le adoraba. Entonces Cabañas entendió que quién estaba ante él era el mismo Diablo, se negó a la petición de Lucifer quién aseguró tenía la oportunidad de acercarse ese día al padre ya que no llevaba su cruz al cuello y que podría destruirlo en un segundo. Sin embargo el buen Cabañas no cedió ante las amenazas y no adoró al diablo quien desapareció del camino.
+Al pasar de los años, si bien el Cabañas no fue destruido si fue ocupado durante la guerra y cerro por un tiempo sus labores de hospicio, pero hoy en día sigue funcionando e viejo edificio como centro cultural y el hogar Cabañas  como hospicio en un nuevo espacio en Guadalajara.";
+"El Diablo en San JuanCoord" = "20.675411, -103.339677";
+
+"El Reloj" = "Es bien sabido que el Cabañas comenzó sus funciones como una casa hogar, en el se albergaban niños desde recién nacidos hasta que cumplían los 18 años y salían a la sociedad como personas respetables, en tan grande edificio era necesario un reloj, el primer reloj del cabañas estaba ubicado en el edificio principal dando hacia el patio central, era un reloj confiable sin embargo la gente del lugar noto algo extraño, el reloj aún cuando funcionaba perfectamente se paraba sin razón alguna y nadie lo podía  echar andar solo un relojero también huérfano del hospicio.
+Luego de varios años, alguien lo notó, cada que el reloj paraba sin motivo aparente, un huérfano del Cabañas había muerto, las encargadas el orfanato consideraron quitar el reloj, pero un día el reloj volvió a pararse y parecía que ninguno de los niños había fallecido, llamaron al relojero viejo amigo,  pero nunca llegó, el huérfano fiel a su casa de la misericordia había muerto y desde entonces no hubo quién hiciera andar el reloj, eventualmente al pasar de los años el reloj fue desinstalado y el cabañas dejo de funcionar como orfanato.";
+"El RelojCoord" = "20.676897, -103.337091";
+
+"La Campanita" = "Sucede en donde es el antiguo convento de santa Mónica y donde aún queda una hermosa iglesia.
+Todos daríamos lo que fuera por permanecer ajenos a la muerte, sin embargo en el convento de santa Mónica era diferente, por que se dice que a las monjas les anunciaba la muerte la campana de las mil vírgenes, en las casa cercanas se escucha una campana que se dice indicaba la muerte de alguna de las monjitas, y dentro del convento, la campana se escuchaba a lo largo del pasillo de las celdas y repicaba en la celda de la monja que había de fallecer.
+Aseguran que se escucharon las campanas por última vez antes de la exclaustración y luego cuando murieron las últimas monjitas de ese convento.";
+"La CampanitaCoord" = "20.680013, -103.349110";
+
+"La Niña" = "La historia cuenta de una niña hija de un viudo ateo, la niña por azares de la vida conoce algunos católicos, hay quiénes dicen que eran las mismas amiguitas de los rumbos otros que eran monjas, el punto es que a partir de esta convivencia, en ella creció el amor a la religión cristiana y el deseo de hacer su primera comunión,  aprendió por si mismas rezos y oraciones, a escondidas de su padre asistió al catecismo, se convirtió e hizo la primera comunión, pero su padre la descubrió y el mismo día la asesinó y ocultó el cuerpo de la niña, cuando el cuerpo fue encontrado estaba prácticamente intacto a pesar de haber pasado mucho tiempo. Hoy en día es considerada una reliquia y un mártir capaz de lograr diversos milagros y muchos creyentes acuden a ella,  en su sarcófago de cristal la muerta luce un lindo vestido de primera comunión en la catedral del Guadalajara.
+La otra versión de la leyenda (con más raíces históricas) asegura que la niña es una niña romana, torturada y asesinada por su padre y otros al haberse convertido al cristianismo y el cuerpo terminó en la catedral de Guadalajara gracias a un Arzobispo que lo recibió o compró de religiosos españoles.";
+"La NiñaCoord" = "20.676822, -103.347437";
+
+"Monja Ahorcada" = "La que hoy se conoce como la casa museo López Portillo, fue durante varios años un el colegio Juana de Arco, se cuenta que en aquel entonces vivía en la escuela una monja desdichada, siempre de semblante tan triste que a simple vista se podía saber que algo muy grande la atormentada, se murmuraba que era por que ella no quería ser monja y su familia la obligó, otros comentaban que guardaba un terrible secreto algún pecado horrible imposible de ser absuelto. Solo se sabe que una noche loca por el tormento y la tristeza la monja fue la escalera de hierro que esta en el ala norte de la casa con cuerda en mano, la cual ató al escalón número trece y brincó al abismo muriendo ahorcada.
+
+Ahora en la casa museo la monja aparece por los pasillos, pidiendo ayuda, con el mismo semblante triste y suplicante, cuentan que hace uno años volvió a aparecer, la miró un guardia por la noche, escuchó voces ya cerrado el museo, la voces venían del fondo de las escaleras, el guardia se acercó, encendió las luces del patio y por respuesta solo obtuvo la silueta de una mujer con hábito, el pobre hombre no pudo estar más tranquilo en su trabajo y pidió su cambio.
+Dicen que a veces se escucha el teléfono sonar y al contestar nadie esta del otro lado, las luces se prenden y se apagan y hay una sombra constante al fondo cerca de las escaleras.";
+"Monja AhorcadaCoord" = "20.679472, -103.346722";
+
+"Piedra Lisa" = "Se dice que en Guadalajara alguna vez estuvo el nido del diablo, justamente ubicado debajo de una piedra lisa en la esquina de Reforma y Mezquitán detrás del palacio de las Vacas.
+En esta calle sucedían toda clase de desgracias, desde la Guadalajara antigua las calles eran tan oscuras que parecía la noche tragaba a aquel que se atreviera a andarlas, se cree en las sombras anidan los males y para este caso al parecer era correcto.
+Esa piedra lisa rodeada de oscuridad, se creía tenía una maldición por la gran cantidad de muertos que en ella aparecían,  los cuales por lo general tenían que ver con la mala fama y poca seguridad dela zona, en la esquina de esas calles había u bar de mala muerte donde se reunían todo tipo de delincuentes entre ellos una banda quienes en la piedra grabaron “por aquí nadie pasa” y los valientes o ignorantes que lo intentaron cayeron muertos.
+Nadie sabe como se ha calmado la situación, ya sea por la desaparición de la piedra o tal vez por que llegó el alumbrado público y disminuyó las sombras.";
+"Piedra LisaCoord" = "20.679895, -103.350372";
+
+"Reloj Catedral" = "Se dice que el reloj de catedral tiene su parte de leyenda, cuentan que si a lo largo de la misa conventual, si  en el espacio en el que se eleva la hostia y el cáliz el reloj indica las 10 de la mañana, esto se toma como anuncio de que alguno de los señores capitulares va a morir y si encima el que muere es el que estaba dando la misa, entonces serán tres las sillas vacías entre los capitulares.
+Esta coincidencia se ha dado varias veces, sin embargo también se comenta que como esta misa es por lo general a las nueve de la mañana es raro que la coincidencia se de muy seguido.
+Ejemplos de esta situación han sido las muertes de: Don Francisco Espinoza y Dávalos, Don Ignacio de la Cueva, Teodoro González, entre otros.";
+"Reloj CatedralCoord" = "20.676822, -103.347437";
+
+"Rincón del Diablo" = "Hace muchos años en la vieja Guadalajara, había una bella casa de muchos balcones y por vecino tenían el convento de Santa María de Gracia, las ventanas de las celdas daban a lo que hoy se conoce como el rincón del diablo. Una noche como cualquier otra las monjas se retiraron a su celda, una de ellas escuchó un ruido y murmullos, al asomarse por su ventana, cuán grande fue su espanto, un grupo de personas, una cruz boca abajo, el símbolo del diablo, ¿qué sucedía en esa oscura casa? Adoradores del diablo vio la monja asustada apretando entre sus manos un Cristo contuvo el grito de terror, y salió con temor a alertar a las autoridades del convento, estos en un principio se mostraron incrédulos, pero como siempre hay que ser precavidos decidieron investigar, en la siguiente noche vistiendo capas negras para confundirse con la noche esperaron y esperaron, de pronto se escucharon los murmullos, cánticos tal vez se acercaron con sigilo y cuál fue su terror, sangre y el llanto de una cabra, que sacrificaban, en ese mismo sitio y para escarmiento de otros adoradores, se condenó a muerte a los hechiceros, a la horca. Sin embargo el lugar quedó un poco maldito un poco embrujado, pensaban en aquel entonces, la gente que se atrevía a pasar se santiguaba rogando por que el diablo no le asechara, años pasaron sin mayor novedad, de vez en cuando el viajero que pasa se encuentra con un hombre de negro que pregunta la hora al caminante, algunos contestan y él junto con estas palabras de agradecimiento el encapuchado se quita la capa y contesta: “dichoso tú que sabes la hora de tu muerte”, mostrando su rostro rojo encendido lleno de cicatrices. Más de un muerto en el callejón del diablo de los que se atreven a caminar a deshoras por esa calle y no se santiguan al pasar, sin tomar en cuenta los terribles hechos que ahí sucedieron años atrás, ¿será que el hombre de negro es algún adorador del diablo en busca de venganza? ¿o será un alma en pena de las muchas que la inquisición se llevó?";
+"Rincón del DiabloCoord" = "20.676741, -103.342941";
+
+"Plaza Liberación" = "Ubicación: Entre avenida Hidalgo, Belén y Liceo.
+Espacio de eventos, conciertos y exposiciones.
+Es una hermosa plaza también conocida como la plaza de las dos copas, ya que cuenta con dos grandes fuentes una en cada extremo de la explanada que tiene forma de copas, cuenta con bellos jardines donde es posible observar la bella fachada del teatro Degollado y la parte trasera de la Catedral.
+Es la plaza más grande de las cuatro que rodean la catedral, las cuales forman una cruz arbolada alrededor del religioso edificio.
+SABÍAS QUE…Para formar esta cruz de plazas, la catedral perdió su atrio y se tuvieron que derribar numerosos y muy bellos edificios coloniales, esta gran remodelación al centro histórico se hizo en la década de los 50’s.";
+"Plaza LiberaciónCoord" = "20.677356,-103.346105";
+
+"Plaza Tapatía" = "Ubicación: Avenida Hidalgo, Calle Morelos y Calzada Independencia.
+Compuesta por: Plaza central, paseo Degollado, paseo Morelos, paseo del hospicio y la plaza López Portillo y Weber.
+Inaugurado: 5 de febrero del 1982.
+En la explanada central está la pieza principal, una gran fuente que tiene la escultura de la inmolación de Quetzalcóatl, con una altura de alrededor de 22 metros, similar a una llama que se alza al cielo que se supone es Quetzalcóatl, con 4 figuras más pequeñas similares, alrededor.
+A unos metros esta una gran figura de metal, la cabeza de Quetzalcóatl que debería ir hasta la punta de la figura principal pero su peso es tal que no se pudo colocar y sostener, así que quedo como una figura aparte, en la misma plaza.
+Esculturas  y fuentes en la plaza: Escudo de Guadalajara, Los niños miones, Fuentes danzarinas, fuente de la ranas, fuente de Quetzalcóatl, La sala de los magos, los magos universales.";
+"Plaza TapatíaCoord"= "20.676353,-103.341342";
+
+"Prepa Jalisco" = "Ubicación: Gónzalez Ortega 225
+Orígenes en:1802
+Inaugurado como preparatoria: 10 de septiembre de1914
+
+El edificio formaba parte de la congregación de San Felipe Neri, ha sido, colegio, hospital, escuela Jesuita y ahora es la preparatoria 1 o preparatoria de Jalisco de la Universidad de Guadalajra.
+En el interior es posible ver hermosos parios rodeados de arcos.
+Biblioteca: Diseñada por los oratorios de San Felipe, terminada por los jesuitas. Hecha con madera de ébano tallada.
+Murales: Cuenta con murales en la escalera principal y en el aula magna, de los pintores Guillermo Chávez Vega y Jorge Navarro.";
+"Prepa JaliscoCoord" = "20.679895,-103.350372";
+
+"Rotonda" = "La rotonda de los jaliscienses ilustres. (Antes rotonda de los hombres ilustres).
+Ubicación: Entre Hidalgo, Independencia, Av. Alcalde y Liceo.
+Inauguración: 1952.
+Es una hermosa plaza con jardines y al centro una rotonda de 17 columnas dedicada a los jaliscienses destacados en la historia del país, alrededor de la rotonda en los jardines se ubican las estatuas de los hasta hoy Jaliscienses Ilustres.
+Dentro de la rotonda hay 98 urnas, aunque no todas están ocupadas aún, bajo el piso, en un cripta se encuentra momifica el cuerpo de Ramón Corona, Jalisciense ilustre, general restaurador de la república y en el lado oriente los restos de el primer rector de la Universidad de Guadalajara, Enrique Díaz de León.
+La plaza de la rotonda forma parte de la cruz de plazas alrededor de la Catedral,  y en ella no solo se albergan hombres ilustres también mujeres.
+
+Es una de las plazas que forman la cruz de  plazas alrededor de la catedral.";
+"RotondaCoord" = "20.677754,-103.347504";
+
+"San Agustín" = "Ahora escuela de música";
+"San AgustínCoord" = "20.676662,-103.345009";
+
+"San Diego" = "San Diego de Alcalá";
+"San DiegoCoord" = "20.681039,-103.350440";
+
+"San Felipe" = "Templo de san felipe neri";
+"San FelipeCoord" = "20.679493,-103.351278";
+
+"San Francisco" = "San Francisco de Asís";
+"San FranciscoCoord" = "20.672155,-103.347210";
+
+"San José" = "Templo de San José de Gracia";
+"San JoséCoord" = "20.680344,-103.347521";
+"Santa Mónica" = "Templo de Santa Mónica";
+"Santa MónicaCoord" = "20.680013,-103.349110";
+
+"Santa María de Gracia" = "Convento de Santa María de Gracia";
+"Santa María de GraciaCoord" = "20.677389,-103.344448";
+
+"Mercado San Juan" = "Mercado de San Juan de Dios";
+"Mercado San JuanCoord" = "20.675411,-103.339677";
+
+"Santa Teresa" = "Templo de Santa Teresa";
+"Santa TeresaCoord" = "20.676452,-103.349944";
+
+"9 Esquinas" = "las";
+"9 EsquinasCoord" = "20.670367,-103.348525";
+
+"Aranzazu" = "Templo";
+"AranzazuCoord" = "20.672351,-103.347204";
+
+"Biblioteca Iberoamericana" = "Octavio Paz";
+"Biblioteca IberoamericanaCoord" = "20.675672,-103.348861";
+
+"Cabañas" = "La casa de la misericordia";
+"CabañasCoord" = "20.676897,-103.337091";
+
+"Catedral" = "Santuario de nuestra señora de la asunción";
+"CatedralCoord" = "20.676822,-103.347437";
+
+"Degollado" = "Teatro Degollado";
+"DegolladoCoord" = "20.677077,-103.344988";
+
+"Escudo" = "Escudo de Guadalajara";
+"EscudoCoord" = "20.676134,-103.342144";
+
+"Exconvento Carmen" = "El convento de las Carmelitas";
+"Exconvento CarmenCoord" = "20.674967,-103.353923";
+"Fundadores" = "La plaza fundadores";
+"FundadoresCoord" = "20.677004,-103.343815";
+
+"Juan Manuel" = "La calles de Juan Manuel";
+"Juan ManuelCoord" = "20.678887,-103.34749";
+
+"Juzgados" = "Los juzgados de los famliar";
+"JuzgadosCoord" = "20.676679,-103.344220";
+
+"Museo Arqueología" =  "El museo de arqueología";
+"Museo ArquelogíaCoord" = "20.679934,-103.349894";
+
+"Museo López Portillo" = "La casa museo López Portillo";
+"Museo López PortilloCoord" = "20.679472,-103.346722";
+
+"Museo Regional" = "primera normal";
+"Museo RegionalCoord" = "20.677630,-103.346607";
+
+"Palacio Muicipal" = "Presidencia municipal de Guadalajara";
+"Palacio MunicipalCoord" = "20.677400,-103.347891";
+
+"Plaza de Armas" = "Kiosko fránces";
+"Plaza de ArmasCoord" = "20.676172,-103.347383";
+
+"Plaza Guadalajara" = "Antes plaza de los laureles";
+"Plaza GuadalajaraCoord" = "20.677113,-103.347458";

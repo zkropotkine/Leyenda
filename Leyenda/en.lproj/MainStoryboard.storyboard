@@ -40,7 +40,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xwi-UG-wpF" kind="modal" id="HM9-kI-9OY"/>
+                                    <segue destination="xwi-UG-wpF" kind="push" id="HM9-kI-9OY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOq-aO-8D9">
@@ -199,17 +199,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lJ1-Y6-7t3">
-                            <size key="itemSize" width="140" height="100"/>
+                            <size key="itemSize" width="140" height="124"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="ds9-SX-Lez" customClass="LeyendaPhotoCell">
-                                <rect key="frame" x="0.0" y="0.0" width="140" height="100"/>
+                                <rect key="frame" x="0.0" y="0.0" width="140" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="140" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="140" height="124"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yb1-Kp-PZI">
@@ -230,10 +230,10 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="yb1-Kp-PZI" firstAttribute="trailing" secondItem="NmS-hs-QGd" secondAttribute="trailing" type="default" id="Me0-AJ-bWe"/>
-                                    <constraint firstItem="yb1-Kp-PZI" firstAttribute="top" secondItem="ds9-SX-Lez" secondAttribute="top" type="default" id="NZf-wM-3Pd"/>
-                                    <constraint firstAttribute="bottom" secondItem="NmS-hs-QGd" secondAttribute="bottom" constant="3" id="TH6-s3-c0a"/>
-                                    <constraint firstItem="yb1-Kp-PZI" firstAttribute="centerX" secondItem="ds9-SX-Lez" secondAttribute="centerX" type="default" id="mrk-mr-9hJ"/>
+                                    <constraint firstItem="yb1-Kp-PZI" firstAttribute="centerX" secondItem="ds9-SX-Lez" secondAttribute="centerX" type="default" id="1hV-r1-yaV"/>
+                                    <constraint firstAttribute="bottom" secondItem="NmS-hs-QGd" secondAttribute="bottom" constant="4" id="A4c-jn-ovM"/>
+                                    <constraint firstItem="yb1-Kp-PZI" firstAttribute="trailing" secondItem="NmS-hs-QGd" secondAttribute="trailing" type="default" id="PeM-nQ-sR6"/>
+                                    <constraint firstItem="yb1-Kp-PZI" firstAttribute="top" secondItem="ds9-SX-Lez" secondAttribute="top" constant="11" id="ol2-sW-di1"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="nameLabel" destination="NmS-hs-QGd" id="ch8-yi-azS"/>
@@ -289,7 +289,11 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="LGu-QQ-lTS">
-                        <barButtonItem key="rightBarButtonItem" title="Ubicacion" id="lRz-9U-P67"/>
+                        <barButtonItem key="rightBarButtonItem" title="Ubicacion" id="lRz-9U-P67">
+                            <connections>
+                                <segue destination="4er-le-ge3" kind="push" id="Se2-gf-yMT"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -299,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43w-6r-R5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3331" y="-377"/>
+            <point key="canvasLocation" x="3308" y="-376"/>
         </scene>
         <!--Displaying Pins on a Map View View Controller-->
         <scene sceneID="aKQ-Vp-0rk">
@@ -324,10 +328,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Bnh-oi-xrV" firstAttribute="top" secondItem="RoH-cW-Bpa" secondAttribute="top" type="default" id="Ghe-rc-bTg"/>
+                            <constraint firstItem="Bnh-oi-xrV" firstAttribute="top" secondItem="RoH-cW-Bpa" secondAttribute="top" constant="-5" id="CjE-9L-pyj"/>
                             <constraint firstItem="iAj-Vz-xng" firstAttribute="bottom" secondItem="RoH-cW-Bpa" secondAttribute="bottom" type="default" id="Ni3-nZ-L5h"/>
                             <constraint firstItem="Bnh-oi-xrV" firstAttribute="leading" secondItem="RoH-cW-Bpa" secondAttribute="leading" type="default" id="QDX-TY-g9g"/>
-                            <constraint firstItem="iAj-Vz-xng" firstAttribute="top" secondItem="Bnh-oi-xrV" secondAttribute="bottom" type="default" id="av6-2w-Mg9"/>
+                            <constraint firstItem="iAj-Vz-xng" firstAttribute="top" secondItem="RoH-cW-Bpa" secondAttribute="top" type="default" id="WQf-bO-STI"/>
                             <constraint firstItem="iAj-Vz-xng" firstAttribute="trailing" secondItem="RoH-cW-Bpa" secondAttribute="trailing" type="default" id="kWJ-i2-sHO"/>
                             <constraint firstItem="Bnh-oi-xrV" firstAttribute="trailing" secondItem="RoH-cW-Bpa" secondAttribute="trailing" type="default" id="lMd-2O-JcL"/>
                             <constraint firstItem="iAj-Vz-xng" firstAttribute="leading" secondItem="RoH-cW-Bpa" secondAttribute="leading" type="default" id="vy8-Lb-gmY"/>
@@ -342,7 +346,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rFM-jJ-2j6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2022" y="716"/>
+            <point key="canvasLocation" x="3389" y="561"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="krV-GL-LeN">
@@ -408,7 +412,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8c0-55-T2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2008" y="113"/>
+            <point key="canvasLocation" x="1941" y="369"/>
         </scene>
         <!--Lugar Grid View Controller - Title-->
         <scene sceneID="HkZ-OV-XzF">
@@ -485,7 +489,6 @@
         <!--Leyenda Detail View Controller - Title-->
         <scene sceneID="d31-k4-b7e">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U7x-mI-jH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="qGH-Or-sEX" customClass="LeyendaDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IwJ-Hd-Z1p">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
@@ -510,7 +513,11 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="Rqk-Hl-oOJ">
-                        <barButtonItem key="rightBarButtonItem" title="Ubicacion" id="wSv-wG-tEz"/>
+                        <barButtonItem key="rightBarButtonItem" title="Ubicacion" id="wSv-wG-tEz">
+                            <connections>
+                                <segue destination="4er-le-ge3" kind="push" id="Gpl-aK-33B"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -518,69 +525,14 @@
                         <outlet property="leyendaTitle" destination="Rqk-Hl-oOJ" id="Ar4-Ih-iwE"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U7x-mI-jH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3359" y="113"/>
+            <point key="canvasLocation" x="3317" y="42"/>
         </scene>
     </scenes>
     <resources>
         <image name="leyendas2.jpg" width="617" height="282"/>
     </resources>
-    <classes>
-        <class className="Displaying_Pins_on_a_Map_ViewViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Displaying_Pins_on_a_Map_ViewViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="myMapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="LeyendaDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeyendaDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="leyendaText" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="leyendaTitle" candidateClass="UINavigationItem"/>
-            </relationships>
-        </class>
-        <class className="LeyendaGridViewController" superclassName="UICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeyendaGridViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="returnHomePage:"/>
-            </relationships>
-        </class>
-        <class className="LeyendaPhotoCell" superclassName="UICollectionViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeyendaPhotoCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="photoView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="LeyendaViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeyendaViewController.h"/>
-        </class>
-        <class className="LugarGridViewController" superclassName="UICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LugarGridViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="returnHomePage:"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="UICollectionReusableView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
-        </class>
-        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
-        </class>
-        <class className="UICollectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
-        </class>
-        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
@@ -588,5 +540,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Grd-19-pcT"/>
+        <segue reference="Jwf-CV-TFK"/>
     </inferredMetricsTieBreakers>
 </document>

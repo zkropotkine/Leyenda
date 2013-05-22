@@ -10,13 +10,14 @@
 
 @implementation LeyendaModel
 
--(id)initWithDescription:(NSString *)descr title:(NSString *)title
+-(id)initWithDescription:(NSString *)descr title:(NSString *)title location:(CLLocationCoordinate2D)location
 {
     self = [super init];
     if (self)
     {
         self.description = descr;
         self.title = title;
+        self.location = location;
     }
     return self;
 }

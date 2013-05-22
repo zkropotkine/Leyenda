@@ -138,15 +138,33 @@
     
     NSString *photoName = [self.photosList objectAtIndex:selectedIndexPath.row];
     
-    NSString *subString = [[photoName componentsSeparatedByString:@"."] objectAtIndex:0];
+    NSString *photoNameSimple = [[photoName componentsSeparatedByString:@"."] objectAtIndex:0];
+    
+    NSMutableString *locationKey = [NSMutableString stringWithString:photoNameSimple];
+    [locationKey appendString:@"Coord"];
+    
+    NSString *leyendaText = NSLocalizedString(photoNameSimple, @"");
+    NSString *leyendaLocation = NSLocalizedString(locationKey, @"");
+    
+    CLLocationCoordinate2D location;
+    
+    if (locationKey == nil) {
+        NSString *latitude = [[leyendaLocation componentsSeparatedByString:@","] objectAtIndex:0];
+        NSString *longitude = [[leyendaLocation componentsSeparatedByString:@","] objectAtIndex:1];
+        
+        NSLog(@"%@",leyendaLocation);
+        NSLog(@"%@",latitude);
+        NSLog(@"%@",longitude);
+        
+        location = CLLocationCoordinate2DMake([latitude doubleValue], [longitude doubleValue]);
+    } else {
+        location = CLLocationCoordinate2DMake(20.675672, -103.348861);
+    }
     
     LeyendaDetailViewController *controller = segue.destinationViewController;
     
+    controller.leyendaModel = [[LeyendaModel alloc] initWithDescription:leyendaText title:photoNameSimple location:location];
     //controller.photoPath = [[self photosDirectory] stringByAppendingPathComponent:photoName];
-    
-    NSString *localizedHelloString = NSLocalizedString(subString, @"");
-    
-    controller.leyendaModel = [[LeyendaModel alloc] initWithDescription:localizedHelloString title:subString];
 }
 
 - (IBAction)returnHomePage:(id)sender {
