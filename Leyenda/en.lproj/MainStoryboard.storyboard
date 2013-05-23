@@ -215,7 +215,7 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yb1-Kp-PZI">
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="127" id="4ck-G9-hPU"/>
-                                                <constraint firstAttribute="height" constant="94" id="uMT-hr-oua"/>
+                                                <constraint firstAttribute="height" constant="78" id="xIh-5y-ekB"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmS-hs-QGd">
@@ -223,17 +223,17 @@
                                                 <constraint firstAttribute="width" constant="125" id="pQg-dg-iJ3"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                                            <color key="textColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.8214285714285714" green="0.11195157904192062" blue="0.12086554650963244" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="NmS-hs-QGd" secondAttribute="bottom" constant="5" id="FgI-JH-Gor"/>
                                     <constraint firstItem="yb1-Kp-PZI" firstAttribute="centerX" secondItem="ds9-SX-Lez" secondAttribute="centerX" type="default" id="Pq8-kD-BCr"/>
-                                    <constraint firstItem="yb1-Kp-PZI" firstAttribute="top" secondItem="ds9-SX-Lez" secondAttribute="top" constant="10" id="aeW-Pz-dWm"/>
-                                    <constraint firstAttribute="bottom" secondItem="NmS-hs-QGd" secondAttribute="bottom" constant="5" id="krQ-ad-7Pt"/>
                                     <constraint firstItem="NmS-hs-QGd" firstAttribute="leading" secondItem="ds9-SX-Lez" secondAttribute="leading" constant="10" id="pHD-sK-43O"/>
+                                    <constraint firstItem="yb1-Kp-PZI" firstAttribute="top" secondItem="ds9-SX-Lez" secondAttribute="top" constant="8" id="ywB-ie-Zca"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="nameLabel" destination="NmS-hs-QGd" id="ch8-yi-azS"/>
