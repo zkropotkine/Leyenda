@@ -48,20 +48,13 @@
 
 // -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)
-
-collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    
+- (UICollectionViewCell *)collectionView:(UICollectionView *) collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     LeyendaPhotoCell *cell = (LeyendaPhotoCell*)
     
-    [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoCell"
-     
-                                              forIndexPath:indexPath];
+    [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoCell" forIndexPath:indexPath];
     
     return cell;
-    
 }
 
 @end

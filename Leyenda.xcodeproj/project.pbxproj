@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DA07BD07174DC8C800F28DC8 /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07BD06174DC8C700F28DC8 /* MapaViewController.m */; };
+		DA07BD0A174DDCB500F28DC8 /* LeyendaCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07BD09174DDCB400F28DC8 /* LeyendaCollectionHeaderView.m */; };
+		DA07BD0C174DE79500F28DC8 /* photo-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = DA07BD0B174DE79400F28DC8 /* photo-frame.png */; };
 		DA09394516C07FAF001775A4 /* Photos in Resources */ = {isa = PBXBuildFile; fileRef = DA09394416C07FAF001775A4 /* Photos */; };
 		DA09395116C082AE001775A4 /* LeyendaGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA09395016C082AE001775A4 /* LeyendaGridViewController.m */; };
 		DA09395416C0837D001775A4 /* LeyendaPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA09395316C0837D001775A4 /* LeyendaPhotoCell.m */; };
@@ -57,6 +59,9 @@
 /* Begin PBXFileReference section */
 		DA07BD05174DC8C700F28DC8 /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
 		DA07BD06174DC8C700F28DC8 /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
+		DA07BD08174DDCB400F28DC8 /* LeyendaCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendaCollectionHeaderView.h; sourceTree = "<group>"; };
+		DA07BD09174DDCB400F28DC8 /* LeyendaCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeyendaCollectionHeaderView.m; sourceTree = "<group>"; };
+		DA07BD0B174DE79400F28DC8 /* photo-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame.png"; sourceTree = "<group>"; };
 		DA09394416C07FAF001775A4 /* Photos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Photos; path = "../../../../Downloads/ios6ptl-master/ch07/CollectionViewDemo/Photos"; sourceTree = "<group>"; };
 		DA09394F16C082AE001775A4 /* LeyendaGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendaGridViewController.h; sourceTree = "<group>"; };
 		DA09395016C082AE001775A4 /* LeyendaGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeyendaGridViewController.m; sourceTree = "<group>"; };
@@ -144,6 +149,7 @@
 				DA5CA8EB16A3C45D001FA2D8 /* CoreLocation.framework */,
 				DA5CA8DC16A28D83001FA2D8 /* MapKit.framework */,
 				DA5CA8DA16A234BC001FA2D8 /* leyendas2.jpg */,
+				DA07BD0B174DE79400F28DC8 /* photo-frame.png */,
 				DA5CA8A516A233F1001FA2D8 /* Leyenda */,
 				DA5CA8C916A233F1001FA2D8 /* LeyendaTests */,
 				DA5CA89E16A233F1001FA2D8 /* Frameworks */,
@@ -189,6 +195,8 @@
 				DA09395016C082AE001775A4 /* LeyendaGridViewController.m */,
 				DA1459FE173F2F4B00ED030C /* LugarGridViewController.h */,
 				DA1459FF173F2F4B00ED030C /* LugarGridViewController.m */,
+				DA07BD08174DDCB400F28DC8 /* LeyendaCollectionHeaderView.h */,
+				DA07BD09174DDCB400F28DC8 /* LeyendaCollectionHeaderView.m */,
 				DA09395516C09281001775A4 /* LeyendaDetailViewController.h */,
 				DA09395616C09281001775A4 /* LeyendaDetailViewController.m */,
 				DA07BD05174DC8C700F28DC8 /* MapaViewController.h */,
@@ -323,6 +331,7 @@
 				DAF0BF5416CA106400422D8F /* Default.png in Resources */,
 				DA5A9789171FAB76008116AA /* Localizable.strings in Resources */,
 				DA4DAA7C174353DA00F27732 /* Coordinates.strings in Resources */,
+				DA07BD0C174DE79500F28DC8 /* photo-frame.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +379,7 @@
 				DAF72B9B16DF308400C1DA1F /* LeyendaModel.m in Sources */,
 				DA145A00173F2F4B00ED030C /* LugarGridViewController.m in Sources */,
 				DA07BD07174DC8C800F28DC8 /* MapaViewController.m in Sources */,
+				DA07BD0A174DDCB500F28DC8 /* LeyendaCollectionHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

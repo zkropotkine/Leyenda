@@ -108,7 +108,6 @@
     btn.title=@"Back";
     
     self.navigationItem.backBarButtonItem=btn;
-    self.navigationController.navigationItem.backBarButtonItem = btn;
 }
 
 

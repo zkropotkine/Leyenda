@@ -198,42 +198,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lJ1-Y6-7t3">
-                            <size key="itemSize" width="140" height="124"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="15" id="lJ1-Y6-7t3">
+                            <size key="itemSize" width="140" height="129"/>
+                            <size key="headerReferenceSize" width="50" height="35"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="ds9-SX-Lez" customClass="LeyendaPhotoCell">
-                                <rect key="frame" x="0.0" y="0.0" width="140" height="124"/>
+                                <rect key="frame" x="15" y="35" width="140" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="140" height="124"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="140" height="129"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yb1-Kp-PZI">
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="72" id="RXy-tC-K9f"/>
-                                                <constraint firstAttribute="width" constant="130" id="sVc-m1-7J7"/>
+                                                <constraint firstAttribute="width" constant="127" id="4ck-G9-hPU"/>
+                                                <constraint firstAttribute="height" constant="94" id="uMT-hr-oua"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmS-hs-QGd">
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="125" id="AGc-h9-g4y"/>
+                                                <constraint firstAttribute="width" constant="125" id="pQg-dg-iJ3"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                            <color key="textColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="yb1-Kp-PZI" firstAttribute="centerX" secondItem="ds9-SX-Lez" secondAttribute="centerX" type="default" id="1hV-r1-yaV"/>
-                                    <constraint firstAttribute="bottom" secondItem="NmS-hs-QGd" secondAttribute="bottom" constant="4" id="A4c-jn-ovM"/>
-                                    <constraint firstItem="yb1-Kp-PZI" firstAttribute="trailing" secondItem="NmS-hs-QGd" secondAttribute="trailing" type="default" id="PeM-nQ-sR6"/>
-                                    <constraint firstItem="yb1-Kp-PZI" firstAttribute="top" secondItem="ds9-SX-Lez" secondAttribute="top" constant="11" id="ol2-sW-di1"/>
+                                    <constraint firstItem="yb1-Kp-PZI" firstAttribute="centerX" secondItem="ds9-SX-Lez" secondAttribute="centerX" type="default" id="Pq8-kD-BCr"/>
+                                    <constraint firstItem="yb1-Kp-PZI" firstAttribute="top" secondItem="ds9-SX-Lez" secondAttribute="top" constant="10" id="aeW-Pz-dWm"/>
+                                    <constraint firstAttribute="bottom" secondItem="NmS-hs-QGd" secondAttribute="bottom" constant="5" id="krQ-ad-7Pt"/>
+                                    <constraint firstItem="NmS-hs-QGd" firstAttribute="leading" secondItem="ds9-SX-Lez" secondAttribute="leading" constant="10" id="pHD-sK-43O"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="nameLabel" destination="NmS-hs-QGd" id="ch8-yi-azS"/>
@@ -241,6 +241,10 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderView" id="S7x-1m-W0M" customClass="LeyendaCollectionHeaderView">
+                            <rect key="frame" x="0.0" y="0.0" width="568" height="35"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="RQt-AO-YzL" id="I1u-uF-fIe"/>
                             <outlet property="delegate" destination="RQt-AO-YzL" id="M1J-uG-FeM"/>
@@ -422,24 +426,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5dK-Db-MmP">
-                            <size key="itemSize" width="140" height="100"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="15" id="5dK-Db-MmP">
+                            <size key="itemSize" width="140" height="124"/>
+                            <size key="headerReferenceSize" width="50" height="35"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="AkP-Gn-C0o" customClass="LeyendaPhotoCell">
-                                <rect key="frame" x="0.0" y="0.0" width="140" height="100"/>
+                                <rect key="frame" x="15" y="35" width="140" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="140" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="140" height="124"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YAF-OU-tnj">
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="130" id="Hj1-Od-EKD"/>
-                                                <constraint firstAttribute="height" constant="72" id="j9u-dE-I7O"/>
+                                                <constraint firstAttribute="height" constant="72" id="PAu-HH-QgG"/>
+                                                <constraint firstAttribute="width" constant="137" id="QVF-JY-u4H"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEn-7H-L5T">
@@ -454,10 +458,10 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="mEn-7H-L5T" secondAttribute="bottom" constant="3" id="VcY-M1-1S4"/>
-                                    <constraint firstItem="YAF-OU-tnj" firstAttribute="centerX" secondItem="AkP-Gn-C0o" secondAttribute="centerX" type="default" id="Vli-48-Vwv"/>
-                                    <constraint firstItem="YAF-OU-tnj" firstAttribute="top" secondItem="AkP-Gn-C0o" secondAttribute="top" type="default" id="Yau-gr-cTM"/>
-                                    <constraint firstItem="YAF-OU-tnj" firstAttribute="trailing" secondItem="mEn-7H-L5T" secondAttribute="trailing" type="default" id="jKS-Bi-OIw"/>
+                                    <constraint firstItem="YAF-OU-tnj" firstAttribute="leading" secondItem="AkP-Gn-C0o" secondAttribute="leading" constant="5" id="4gp-sk-EQb"/>
+                                    <constraint firstItem="YAF-OU-tnj" firstAttribute="top" secondItem="AkP-Gn-C0o" secondAttribute="top" constant="8" id="6Je-kP-89O"/>
+                                    <constraint firstAttribute="bottom" secondItem="mEn-7H-L5T" secondAttribute="bottom" constant="4" id="775-XX-I2F"/>
+                                    <constraint firstItem="mEn-7H-L5T" firstAttribute="leading" secondItem="AkP-Gn-C0o" secondAttribute="leading" constant="10" id="E7t-xD-OAM"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="nameLabel" destination="mEn-7H-L5T" id="H3g-C6-P3k"/>
@@ -465,6 +469,10 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderView" id="Xqn-mG-uOr" customClass="LeyendaCollectionHeaderView">
+                            <rect key="frame" x="0.0" y="0.0" width="568" height="35"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="dOK-BA-pG8" id="fZJ-jT-hcx"/>
                             <outlet property="delegate" destination="dOK-BA-pG8" id="Hrf-wA-GFJ"/>
@@ -550,7 +558,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7rN-dN-OpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2648" y="931"/>
+            <point key="canvasLocation" x="2734" y="1073"/>
         </scene>
         <!--Displaying Pins on a Map View View Controller - Title-->
         <scene sceneID="wja-aL-n1E">
@@ -576,7 +584,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="wPT-3h-yaX">
-                        <barButtonItem key="leftBarButtonItem" title="Volver" id="MAS-gD-VcZ"/>
+                        <barButtonItem key="leftBarButtonItem" title="Volver" id="MAS-gD-VcZ">
+                            <connections>
+                                <action selector="returnHomePage:" destination="uTS-gT-aNh" id="bOn-4h-A6u"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -585,7 +597,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fg5-Ja-cIe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2883" y="573"/>
+            <point key="canvasLocation" x="2531" y="735"/>
         </scene>
     </scenes>
     <resources>
@@ -598,6 +610,9 @@
                 <relationship kind="action" name="returnHomePage:"/>
                 <relationship kind="outlet" name="myMapView" candidateClass="MKMapView"/>
             </relationships>
+        </class>
+        <class className="LeyendaCollectionHeaderView" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeyendaCollectionHeaderView.h"/>
         </class>
         <class className="LeyendaDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LeyendaDetailViewController.h"/>

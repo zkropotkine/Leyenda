@@ -10,6 +10,7 @@
 #import "LeyendaPhotoCell.h"
 #import "LeyendaDetailViewController.h"
 #import "LeyendaModel.h"
+#import "LeyendaCollectionHeaderView.h"
 
 @interface LugarGridViewController ()
 @property (strong, nonatomic) NSArray *photosList;
@@ -79,7 +80,25 @@
     
     NSString *photoFilePath = [[self photosDirectory] stringByAppendingPathComponent:photoName];
     
-    cell.nameLabel.text =[photoName stringByDeletingPathExtension];
+    NSString *string = [photoName stringByDeletingPathExtension];
+    
+    NSLog(@"string == %@", string);
+    
+    NSRange rangeToSearch = NSMakeRange(0, [string length]); // get a range without the space character
+    NSRange rangeOfSecondToLastSpace = [string rangeOfString:@" " options:NSBackwardsSearch range:rangeToSearch];
+    
+    if (rangeOfSecondToLastSpace.length > 0 && rangeOfSecondToLastSpace.location < rangeToSearch.length) {
+        NSString *spaceReplacement = @"\n";
+        NSString *result = [string stringByReplacingCharactersInRange:rangeOfSecondToLastSpace withString:spaceReplacement];
+        
+        NSLog(@"replacedString == %@", result);
+        
+        string = result;
+    }
+    
+    cell.nameLabel.text = string;
+    cell.nameLabel.font = [UIFont boldSystemFontOfSize:13.0];
+    cell.nameLabel.numberOfLines = 0;
     
     __block UIImage* thumbImage = [self.photosCache objectForKey:photoName];
     cell.photoView.image = thumbImage;
@@ -89,9 +108,9 @@
             
             UIImage *image = [UIImage imageWithContentsOfFile:photoFilePath];
             
-            UIGraphicsBeginImageContext(CGSizeMake(128.0f, 128.0f));
+            UIGraphicsBeginImageContext(CGSizeMake(150.0f, 150.0f));
             
-            [image drawInRect:CGRectMake(0, 0, 128.0f, 128.0f)];
+            [image drawInRect:CGRectMake(0, 0, 150.0f, 150.0f)];
             
             thumbImage = UIGraphicsGetImageFromCurrentImageContext();
             
@@ -117,16 +136,10 @@
 
 - (UICollectionReusableView *)collectionView:(UICollectionView*)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *SupplementaryViewIdentifier = @"LegendHeader";
+    static NSString *SupplementaryViewIdentifier = @"HeaderView";
     
-    return [collectionView
-            
-            dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
-            
-            withReuseIdentifier:SupplementaryViewIdentifier
-            
-            forIndexPath:indexPath];
-    
+    return [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
+                           withReuseIdentifier:SupplementaryViewIdentifier forIndexPath:indexPath];
 }
 
 -(void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -140,20 +153,17 @@
     
     NSString *photoNameSimple = [[photoName componentsSeparatedByString:@"."] objectAtIndex:0];
     
-    NSMutableString *locationKey = [NSMutableString stringWithString:photoNameSimple];
-    [locationKey appendString:@"Coord"];
+    NSData *data = [photoNameSimple dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+    NSString *cleanPhotoName = [[[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding] stringByReplacingOccurrencesOfString:@"?" withString:@""];
+    NSLog(@"%@", cleanPhotoName);
     
+    NSMutableString *locationKey = [NSMutableString stringWithString:cleanPhotoName];
+    [locationKey appendString:@"Coord"];
     
     NSLog(@"%@", locationKey);
     
-    NSString* finish = [[locationKey componentsSeparatedByCharactersInSet:[[NSCharacterSet letterCharacterSet] invertedSet]] componentsJoinedByString:@""];
-    
-    NSLog(@"finish %@", finish);
-    
-    
-    NSString *leyendaText = NSLocalizedString(photoNameSimple, @"");
+    NSString *leyendaText = NSLocalizedString(cleanPhotoName, @"");
     NSString *leyendaLocation = NSLocalizedStringFromTable(locationKey, @"Coordinates", @"");
-    //NSString *leyendaLocation = NSLocalizedString(locationKey, @"");
     
     CLLocationCoordinate2D location;
     
@@ -173,7 +183,6 @@
     LeyendaDetailViewController *controller = segue.destinationViewController;
     
     controller.leyendaModel = [[LeyendaModel alloc] initWithDescription:leyendaText title:photoNameSimple location:location];
-    //controller.photoPath = [[self photosDirectory] stringByAppendingPathComponent:photoName];
 }
 
 - (IBAction)returnHomePage:(id)sender {

@@ -10,6 +10,7 @@
 #import "LeyendaPhotoCell.h"
 #import "LeyendaDetailViewController.h"
 #import "LeyendaModel.h"
+#import "LeyendaCollectionHeaderView.h"
 
 @interface LeyendaGridViewController ()
 @property (strong, nonatomic) NSArray *photosList;
@@ -49,24 +50,6 @@
     });
     
     self.title = @"Leyendas";
-    self.navigationItem.hidesBackButton = false;
-
-    UIBarButtonItem *btn=[[UIBarButtonItem alloc]init];
-    btn.title=@"Back";
-    
-    self.navigationItem.backBarButtonItem=btn;
-    self.navigationController.navigationItem.backBarButtonItem = btn;    
-    
-    //UIButton* backButton = [UIButton buttonWithType:101]; // left-pointing shape!
-    //[backButton addTarget:self action:@selector(returnHomePage:) forControlEvents:UIControlEventTouchUpInside];
-    //[backButton setTitle:@"Back" forState:UIControlStateNormal];
-    
-    // create button item -- possible because UIButton subclasses UIView!
-    //UIBarButtonItem* backItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
-    
-    // add to toolbar, or to a navbar (you should only have one of these!)
-    //[self.navigationController.navigationBar setItems:[NSArray arrayWithObject:backItem]];
-    //self.navigationItem.backBarButtonItem = backItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -105,17 +88,10 @@
         
         string = result;
     }
-    /*if ([string hasSuffix:@" "]) {
-        NSString *spaceReplacement = @"\n";
-        NSString *replacedString = [[string substringToIndex:
-                                     [string length]] stringByAppendingString:spaceReplacement];
-        NSLog(@"replacedString == %@", replacedString);
-        string = replacedString;
-    }*/
-    
-    
+
     cell.nameLabel.text = string;
-    cell.nameLabel.font = [UIFont systemFontOfSize:13.0];
+    cell.nameLabel.font = [UIFont fontWithName:@"Chalkduster" size:13.0];
+    //cell.nameLabel.font = [UIFont boldSystemFontOfSize:13.0];
     cell.nameLabel.numberOfLines = 0;
         
     __block UIImage* thumbImage = [self.photosCache objectForKey:photoName];
@@ -126,9 +102,9 @@
             
             UIImage *image = [UIImage imageWithContentsOfFile:photoFilePath];
             
-            UIGraphicsBeginImageContext(CGSizeMake(150.0f, 150.0f));
+            UIGraphicsBeginImageContext(CGSizeMake(128.0f, 128.0f));
             
-            [image drawInRect:CGRectMake(0, 0, 150.0f, 150.0f)];
+            [image drawInRect:CGRectMake(0, 0, 128.0f, 128.0f)];
             
             thumbImage = UIGraphicsGetImageFromCurrentImageContext();
             
@@ -140,6 +116,8 @@
             });
         });
     }
+    
+    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"photo-frame.png"]];
     
     return cell;
 }
@@ -154,15 +132,10 @@
 
 - (UICollectionReusableView *)collectionView:(UICollectionView*)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *SupplementaryViewIdentifier = @"LegendHeader";
+    static NSString *SupplementaryViewIdentifier = @"HeaderView";
     
-    return [collectionView
-            
-            dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
-            
-            withReuseIdentifier:SupplementaryViewIdentifier
-            
-            forIndexPath:indexPath];
+    return [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
+                           withReuseIdentifier:SupplementaryViewIdentifier forIndexPath:indexPath];
     
 }
 
@@ -207,10 +180,10 @@
     LeyendaDetailViewController *controller = segue.destinationViewController;
     
     controller.leyendaModel = [[LeyendaModel alloc] initWithDescription:leyendaText title:photoNameSimple location:location];
-    //controller.photoPath = [[self photosDirectory] stringByAppendingPathComponent:photoName];
 }
 
 - (IBAction)returnHomePage:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 @end
