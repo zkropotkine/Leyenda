@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA07BD07174DC8C800F28DC8 /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07BD06174DC8C700F28DC8 /* MapaViewController.m */; };
 		DA09394516C07FAF001775A4 /* Photos in Resources */ = {isa = PBXBuildFile; fileRef = DA09394416C07FAF001775A4 /* Photos */; };
 		DA09395116C082AE001775A4 /* LeyendaGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA09395016C082AE001775A4 /* LeyendaGridViewController.m */; };
 		DA09395416C0837D001775A4 /* LeyendaPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA09395316C0837D001775A4 /* LeyendaPhotoCell.m */; };
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA07BD05174DC8C700F28DC8 /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
+		DA07BD06174DC8C700F28DC8 /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
 		DA09394416C07FAF001775A4 /* Photos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Photos; path = "../../../../Downloads/ios6ptl-master/ch07/CollectionViewDemo/Photos"; sourceTree = "<group>"; };
 		DA09394F16C082AE001775A4 /* LeyendaGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendaGridViewController.h; sourceTree = "<group>"; };
 		DA09395016C082AE001775A4 /* LeyendaGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeyendaGridViewController.m; sourceTree = "<group>"; };
@@ -188,6 +191,8 @@
 				DA1459FF173F2F4B00ED030C /* LugarGridViewController.m */,
 				DA09395516C09281001775A4 /* LeyendaDetailViewController.h */,
 				DA09395616C09281001775A4 /* LeyendaDetailViewController.m */,
+				DA07BD05174DC8C700F28DC8 /* MapaViewController.h */,
+				DA07BD06174DC8C700F28DC8 /* MapaViewController.m */,
 				DAF72B9916DF308400C1DA1F /* LeyendaModel.h */,
 				DAF72B9A16DF308400C1DA1F /* LeyendaModel.m */,
 				DA09395216C0837D001775A4 /* LeyendaPhotoCell.h */,
@@ -364,6 +369,7 @@
 				DA09396016C09C5E001775A4 /* MKViewController.m in Sources */,
 				DAF72B9B16DF308400C1DA1F /* LeyendaModel.m in Sources */,
 				DA145A00173F2F4B00ED030C /* LugarGridViewController.m in Sources */,
+				DA07BD07174DC8C800F28DC8 /* MapaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

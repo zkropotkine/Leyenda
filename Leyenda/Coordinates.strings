@@ -5,10 +5,8 @@
  Created by Daniel Rodriguez on 5/15/13.
  Copyright (c) 2013 Daniel Rodriguez. All rights reserved.
  */
-"Lugar1Coord" = "20.715336,-103.36146";
-"Lugar2Coord" = "20.72215,-103.365085";
-"Lugar3Coord" = "20.718869,-103.360675";
-"Caída del DegolladoCoord" = "20.677077,-103.344988";
+
+"Caida del DegolladoCoord" = "20.677077,-103.344988";
 "Casa de la CondenadaCoord" = "20.678887,-103.34749";
 "Casa de los PerrosCoord" = "20.680008,-103.347634";
 "Casa EncantadaCoord" = "20.678887,-103.34749";
@@ -20,7 +18,7 @@
 "Monja AhorcadaCoord" = "20.679472,-103.346722";
 "Piedra LisaCoord" = "20.679895,-103.350372";
 "Reloj CatedralCoord" = "20.676822,-103.347437";
-"Rincón del DiabloCoord" = "20.676741,-103.342941";
+"Rincon del DiabloCoord" = "20.676741,-103.342941";
 "9 EsquinasCoord" = "20.670367,-103.348525";
 "AranzazuCoord" = "20.672351,-103.347204";
 "Biblioteca IberoamericanaCoord" = "20.675672,-103.348861";

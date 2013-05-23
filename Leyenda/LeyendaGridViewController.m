@@ -53,8 +53,20 @@
 
     UIBarButtonItem *btn=[[UIBarButtonItem alloc]init];
     btn.title=@"Back";
+    
     self.navigationItem.backBarButtonItem=btn;
-    self.navigationController.navigationItem.backBarButtonItem = btn;
+    self.navigationController.navigationItem.backBarButtonItem = btn;    
+    
+    //UIButton* backButton = [UIButton buttonWithType:101]; // left-pointing shape!
+    //[backButton addTarget:self action:@selector(returnHomePage:) forControlEvents:UIControlEventTouchUpInside];
+    //[backButton setTitle:@"Back" forState:UIControlStateNormal];
+    
+    // create button item -- possible because UIButton subclasses UIView!
+    //UIBarButtonItem* backItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    
+    // add to toolbar, or to a navbar (you should only have one of these!)
+    //[self.navigationController.navigationBar setItems:[NSArray arrayWithObject:backItem]];
+    //self.navigationItem.backBarButtonItem = backItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -162,20 +174,24 @@
     NSIndexPath *selectedIndexPath = sender;
     
     NSString *photoName = [self.photosList objectAtIndex:selectedIndexPath.row];
-    
+
     NSString *photoNameSimple = [[photoName componentsSeparatedByString:@"."] objectAtIndex:0];
     
-    NSMutableString *locationKey = [NSMutableString stringWithString:photoNameSimple];
+    NSData *data = [photoNameSimple dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+    NSString *cleanPhotoName = [[[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding] stringByReplacingOccurrencesOfString:@"?" withString:@""];
+    NSLog(@"%@", cleanPhotoName);
+    
+    NSMutableString *locationKey = [NSMutableString stringWithString:cleanPhotoName];
     [locationKey appendString:@"Coord"];
     
     NSLog(@"%@", locationKey);
     
-    NSString *leyendaText = NSLocalizedString(photoNameSimple, @"");
-    NSString *leyendaLocation = NSLocalizedString(locationKey, @"");
-    
+    NSString *leyendaText = NSLocalizedString(cleanPhotoName, @"");
+    NSString *leyendaLocation = NSLocalizedStringFromTable(locationKey, @"Coordinates", @"");
+
     CLLocationCoordinate2D location;
     
-    if (locationKey == nil) {
+    if (leyendaLocation != locationKey) {
         NSString *latitude = [[leyendaLocation componentsSeparatedByString:@","] objectAtIndex:0];
         NSString *longitude = [[leyendaLocation componentsSeparatedByString:@","] objectAtIndex:1];
         

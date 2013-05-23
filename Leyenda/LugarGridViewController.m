@@ -143,12 +143,21 @@
     NSMutableString *locationKey = [NSMutableString stringWithString:photoNameSimple];
     [locationKey appendString:@"Coord"];
     
+    
+    NSLog(@"%@", locationKey);
+    
+    NSString* finish = [[locationKey componentsSeparatedByCharactersInSet:[[NSCharacterSet letterCharacterSet] invertedSet]] componentsJoinedByString:@""];
+    
+    NSLog(@"finish %@", finish);
+    
+    
     NSString *leyendaText = NSLocalizedString(photoNameSimple, @"");
-    NSString *leyendaLocation = NSLocalizedString(locationKey, @"");
+    NSString *leyendaLocation = NSLocalizedStringFromTable(locationKey, @"Coordinates", @"");
+    //NSString *leyendaLocation = NSLocalizedString(locationKey, @"");
     
     CLLocationCoordinate2D location;
     
-    if (locationKey == nil) {
+    if (leyendaLocation != locationKey) {
         NSString *latitude = [[leyendaLocation componentsSeparatedByString:@","] objectAtIndex:0];
         NSString *longitude = [[leyendaLocation componentsSeparatedByString:@","] objectAtIndex:1];
         

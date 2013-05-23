@@ -10,7 +10,7 @@
 #import "MyAnnonation.h"
 
 @interface Displaying_Pins_on_a_Map_ViewViewController ()
-
+- (IBAction)returnHomePage:(id)sender;
 @end
 
 @implementation Displaying_Pins_on_a_Map_ViewViewController
@@ -100,6 +100,15 @@
          user to enable location services */
         NSLog(@"Location services are not enabled");
     }
+    
+    self.title = @"Mapa";
+    self.navigationItem.hidesBackButton = false;
+    
+    UIBarButtonItem *btn=[[UIBarButtonItem alloc]init];
+    btn.title=@"Back";
+    
+    self.navigationItem.backBarButtonItem=btn;
+    self.navigationController.navigationItem.backBarButtonItem = btn;
 }
 
 
@@ -119,9 +128,8 @@
 }
 
 
-- (void)locationManager:(CLLocationManager *)manager
-    didUpdateToLocation:(CLLocation *)newLocation
-           fromLocation:(CLLocation *)oldLocation{
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
     
     /* We received the new location */
     
@@ -142,16 +150,20 @@
     free(pointsArray);
     
     [self.myMapView addOverlay:routeLine]; 
-    
 }
 
-- (void)locationManager:(CLLocationManager *)manager
-       didFailWithError:(NSError *)error{
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
     NSLog(@"didFailWithError: %@", error);
     UIAlertView *errorAlert = [[UIAlertView alloc]
                                initWithTitle:@"Error" message:@"Failed to Get Your Location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [errorAlert show];
 
+}
+
+- (IBAction)returnHomePage:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
