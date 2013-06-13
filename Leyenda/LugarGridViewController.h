@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface LugarGridViewController : UICollectionViewController<UICollectionViewDataSource, UICollectionViewDelegate>
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+//@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @end

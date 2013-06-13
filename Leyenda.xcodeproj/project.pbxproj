@@ -17,6 +17,8 @@
 		DA09395716C09281001775A4 /* LeyendaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA09395616C09281001775A4 /* LeyendaDetailViewController.m */; };
 		DA09396016C09C5E001775A4 /* MKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA09395F16C09C5E001775A4 /* MKViewController.m */; };
 		DA145A00173F2F4B00ED030C /* LugarGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1459FF173F2F4B00ED030C /* LugarGridViewController.m */; };
+		DA23B88317697AD700CB95AB /* guadalajara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA23B88217697AD700CB95AB /* guadalajara.jpg */; };
+		DA23B88517697DCE00CB95AB /* Centro-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA23B88417697DCE00CB95AB /* Centro-1.jpg */; };
 		DA4DAA7C174353DA00F27732 /* Coordinates.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA4DAA7B174353DA00F27732 /* Coordinates.strings */; };
 		DA5A9789171FAB76008116AA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA5A9788171FAB76008116AA /* Localizable.strings */; };
 		DA5CA8A016A233F1001FA2D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5CA89F16A233F1001FA2D8 /* UIKit.framework */; };
@@ -41,6 +43,7 @@
 		DA5CA8E716A3C0A2001FA2D8 /* MyAnnonation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5CA8E616A3C0A2001FA2D8 /* MyAnnonation.m */; };
 		DA5CA8EA16A3C144001FA2D8 /* Displaying_Pins_on_a_Map_ViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5CA8E916A3C144001FA2D8 /* Displaying_Pins_on_a_Map_ViewViewController.m */; };
 		DA5CA8EC16A3C45D001FA2D8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5CA8EB16A3C45D001FA2D8 /* CoreLocation.framework */; };
+		DA9C4D0D17603A9C00A5549D /* LeyendaGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C4D0C17603A9C00A5549D /* LeyendaGalleryViewController.m */; };
 		DAF0BF5016CA101900422D8F /* icono57.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF0BF4F16CA101900422D8F /* icono57.png */; };
 		DAF0BF5216CA102400422D8F /* icono114.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF0BF5116CA102400422D8F /* icono114.png */; };
 		DAF0BF5416CA106400422D8F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF0BF5316CA106400422D8F /* Default.png */; };
@@ -75,6 +78,8 @@
 		DA09395F16C09C5E001775A4 /* MKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKViewController.m; sourceTree = "<group>"; };
 		DA1459FE173F2F4B00ED030C /* LugarGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LugarGridViewController.h; sourceTree = "<group>"; };
 		DA1459FF173F2F4B00ED030C /* LugarGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LugarGridViewController.m; sourceTree = "<group>"; };
+		DA23B88217697AD700CB95AB /* guadalajara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guadalajara.jpg; sourceTree = "<group>"; };
+		DA23B88417697DCE00CB95AB /* Centro-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Centro-1.jpg"; sourceTree = "<group>"; };
 		DA4DAA7B174353DA00F27732 /* Coordinates.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Coordinates.strings; sourceTree = "<group>"; };
 		DA5A9788171FAB76008116AA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		DA5CA89B16A233F1001FA2D8 /* Leyenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leyenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +113,8 @@
 		DA5CA8E816A3C143001FA2D8 /* Displaying_Pins_on_a_Map_ViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Displaying_Pins_on_a_Map_ViewViewController.h; sourceTree = "<group>"; };
 		DA5CA8E916A3C144001FA2D8 /* Displaying_Pins_on_a_Map_ViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Displaying_Pins_on_a_Map_ViewViewController.m; sourceTree = "<group>"; };
 		DA5CA8EB16A3C45D001FA2D8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DA9C4D0B17603A9C00A5549D /* LeyendaGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendaGalleryViewController.h; sourceTree = "<group>"; };
+		DA9C4D0C17603A9C00A5549D /* LeyendaGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeyendaGalleryViewController.m; sourceTree = "<group>"; };
 		DAF0BF4F16CA101900422D8F /* icono57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono57.png; sourceTree = "<group>"; };
 		DAF0BF5116CA102400422D8F /* icono114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono114.png; sourceTree = "<group>"; };
 		DAF0BF5316CA106400422D8F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -153,6 +160,8 @@
 				DA5CA8DA16A234BC001FA2D8 /* leyendas2.jpg */,
 				DA07BD0D174DF8C300F28DC8 /* Frame.png */,
 				DA07BD0B174DE79400F28DC8 /* photo-frame.png */,
+				DA23B88417697DCE00CB95AB /* Centro-1.jpg */,
+				DA23B88217697AD700CB95AB /* guadalajara.jpg */,
 				DA5CA8A516A233F1001FA2D8 /* Leyenda */,
 				DA5CA8C916A233F1001FA2D8 /* LeyendaTests */,
 				DA5CA89E16A233F1001FA2D8 /* Frameworks */,
@@ -202,6 +211,8 @@
 				DA07BD09174DDCB400F28DC8 /* LeyendaCollectionHeaderView.m */,
 				DA09395516C09281001775A4 /* LeyendaDetailViewController.h */,
 				DA09395616C09281001775A4 /* LeyendaDetailViewController.m */,
+				DA9C4D0B17603A9C00A5549D /* LeyendaGalleryViewController.h */,
+				DA9C4D0C17603A9C00A5549D /* LeyendaGalleryViewController.m */,
 				DA07BD05174DC8C700F28DC8 /* MapaViewController.h */,
 				DA07BD06174DC8C700F28DC8 /* MapaViewController.m */,
 				DAF72B9916DF308400C1DA1F /* LeyendaModel.h */,
@@ -336,6 +347,8 @@
 				DA4DAA7C174353DA00F27732 /* Coordinates.strings in Resources */,
 				DA07BD0C174DE79500F28DC8 /* photo-frame.png in Resources */,
 				DA07BD0E174DF8C300F28DC8 /* Frame.png in Resources */,
+				DA23B88317697AD700CB95AB /* guadalajara.jpg in Resources */,
+				DA23B88517697DCE00CB95AB /* Centro-1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +397,7 @@
 				DA145A00173F2F4B00ED030C /* LugarGridViewController.m in Sources */,
 				DA07BD07174DC8C800F28DC8 /* MapaViewController.m in Sources */,
 				DA07BD0A174DDCB500F28DC8 /* LeyendaCollectionHeaderView.m in Sources */,
+				DA9C4D0D17603A9C00A5549D /* LeyendaGalleryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +456,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sergio Rodriguez (VHN3CA984J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sergio Rodriguez (VHN3CA984J)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -457,6 +472,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -470,7 +487,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sergio Rodriguez (VHN3CA984J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sergio Rodriguez (VHN3CA984J)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -478,6 +496,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -486,11 +506,15 @@
 		DA5CA8D516A233F1001FA2D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sergio Rodriguez (VHN3CA984J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sergio Rodriguez (VHN3CA984J)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Leyenda/Leyenda-Prefix.pch";
 				INFOPLIST_FILE = "Leyenda/Leyenda-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -499,11 +523,15 @@
 		DA5CA8D616A233F1001FA2D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sergio Rodriguez (VHN3CA984J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sergio Rodriguez (VHN3CA984J)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Leyenda/Leyenda-Prefix.pch";
 				INFOPLIST_FILE = "Leyenda/Leyenda-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

@@ -83,7 +83,7 @@
 
 -(IBAction)galleryAction:(id)sender {
     NSLog(@"Gallery Action");
-    [self performSegueWithIdentifier:@"holaSegue" sender:self];
+    [self performSegueWithIdentifier:@"gallerySegue" sender:self];
 }
 
 -(IBAction)locationAction:(id)sender {

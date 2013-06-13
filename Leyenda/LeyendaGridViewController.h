@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface LeyendaGridViewController : UICollectionViewController<UICollectionViewDataSource, UICollectionViewDelegate>
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+//@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @end

@@ -43,12 +43,13 @@
     NSLog(@"User's longitude is: %f", self.location.longitude );
     
     
-    CLLocationCoordinate2D location;
+    CLLocationCoordinate2D maplocation;
     if (self.location.latitude != 0 && self.location.longitude != 0) {
-        location = self.location;
+        maplocation = self.location;
+    
         /* Create the annotation using the location */
         MyAnnonation *annotation =
-        [[MyAnnonation alloc] initWithCoordinates:location
+        [[MyAnnonation alloc] initWithCoordinates:maplocation
                                             title:@"My Title"
                                          subTitle:@"My Sub Title"];
         
@@ -58,7 +59,6 @@
         NSString *stringsPath = [[NSBundle mainBundle] pathForResource:@"Coordinates" ofType:@"strings"];
         NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:stringsPath];
         NSMutableArray *annotations = [[NSMutableArray alloc] init];
-        
         
         for(id key in dictionary) {
             NSString *keyName = key;
@@ -72,11 +72,10 @@
             NSLog(@"%@",latitude);
             NSLog(@"%@",longitude);
             
-            CLLocationCoordinate2D currentlocation =
-            CLLocationCoordinate2DMake([latitude doubleValue], [longitude doubleValue]);
+            maplocation = CLLocationCoordinate2DMake([latitude doubleValue], [longitude doubleValue]);
             
             MyAnnonation *annotation =
-            [[MyAnnonation alloc] initWithCoordinates:currentlocation
+            [[MyAnnonation alloc] initWithCoordinates:maplocation
                                                 title:locationName
                                                 subTitle:locationName];
             
@@ -93,6 +92,11 @@
         self.myLocationManager.delegate = self;
         
         [self.myLocationManager startUpdatingLocation];
+        // 500 meters x 500 meters
+        MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(maplocation, 500, 500);
+        MKCoordinateRegion adjustedRegion = [self.myMapView regionThatFits:viewRegion];
+        [self.myMapView setRegion:adjustedRegion animated:YES];
+        self.myMapView.showsUserLocation = YES;
         NSLog(@"Deberia de jalar");
     } else {
         /* Location services are not enabled.
