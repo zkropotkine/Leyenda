@@ -90,8 +90,8 @@
     }
 
     cell.nameLabel.text = string;
-    cell.nameLabel.font = [UIFont fontWithName:@"Chalkduster" size:13.0];
-    //cell.nameLabel.font = [UIFont boldSystemFontOfSize:13.0];
+    //cell.nameLabel.font = [UIFont fontWithName:@"GeezaPro-Bold" size:13.0];
+    cell.nameLabel.font = [UIFont boldSystemFontOfSize:13.0];
     cell.nameLabel.numberOfLines = 0;
         
     __block UIImage* thumbImage = [self.photosCache objectForKey:photoName];

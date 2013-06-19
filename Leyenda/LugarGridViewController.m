@@ -123,6 +123,8 @@
         });
     }
     
+    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Frame.png"]];
+    
     return cell;
 }
 

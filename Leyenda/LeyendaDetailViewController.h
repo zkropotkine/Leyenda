@@ -16,5 +16,4 @@
 @property (strong, nonatomic) LeyendaModel *leyendaModel;
 
 -(IBAction)galleryAction:(id)sender;
--(IBAction)locationAction:(id)sender;
 @end

@@ -8,7 +8,7 @@
 
 #import "LeyendaGalleryViewController.h"
 #import "LeyendaPhotoCell.h"
-#import "LeyendaDetailViewController.h"
+#import "LeyendaGalleryDetailViewController.h"
 #import "LeyendaModel.h"
 #import "LeyendaCollectionHeaderView.h"
 
@@ -52,7 +52,7 @@
         });
     });
     
-    self.title = @"Lugares";
+    self.title = @"Galleria";
     self.navigationItem.hidesBackButton = false;
     
     
@@ -126,6 +126,8 @@
         });
     }
     
+    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Frame.png"]];
+    
     return cell;
 }
 
@@ -150,42 +152,7 @@
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    NSIndexPath *selectedIndexPath = sender;
-    
-    NSString *photoName = [self.photosList objectAtIndex:selectedIndexPath.row];
-    
-    NSString *photoNameSimple = [[photoName componentsSeparatedByString:@"."] objectAtIndex:0];
-    
-    NSData *data = [photoNameSimple dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
-    NSString *cleanPhotoName = [[[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding] stringByReplacingOccurrencesOfString:@"?" withString:@""];
-    NSLog(@"%@", cleanPhotoName);
-    
-    NSMutableString *locationKey = [NSMutableString stringWithString:cleanPhotoName];
-    [locationKey appendString:@"Coord"];
-    
-    NSLog(@"%@", locationKey);
-    
-    NSString *leyendaText = NSLocalizedString(cleanPhotoName, @"");
-    NSString *leyendaLocation = NSLocalizedStringFromTable(locationKey, @"Coordinates", @"");
-    
-    CLLocationCoordinate2D location;
-    
-    if (leyendaLocation != locationKey) {
-        NSString *latitude = [[leyendaLocation componentsSeparatedByString:@","] objectAtIndex:0];
-        NSString *longitude = [[leyendaLocation componentsSeparatedByString:@","] objectAtIndex:1];
-        
-        NSLog(@"%@",leyendaLocation);
-        NSLog(@"%@",latitude);
-        NSLog(@"%@",longitude);
-        
-        location = CLLocationCoordinate2DMake([latitude doubleValue], [longitude doubleValue]);
-    } else {
-        location = CLLocationCoordinate2DMake(20.675672, -103.348861);
-    }
-    
-    LeyendaDetailViewController *controller = segue.destinationViewController;
-    
-    controller.leyendaModel = [[LeyendaModel alloc] initWithDescription:leyendaText title:photoNameSimple location:location];
+
 }
 
 - (IBAction)returnHomePage:(id)sender {

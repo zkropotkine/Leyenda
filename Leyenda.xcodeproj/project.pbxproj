@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DA07BD07174DC8C800F28DC8 /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07BD06174DC8C700F28DC8 /* MapaViewController.m */; };
 		DA07BD0A174DDCB500F28DC8 /* LeyendaCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07BD09174DDCB400F28DC8 /* LeyendaCollectionHeaderView.m */; };
-		DA07BD0C174DE79500F28DC8 /* photo-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = DA07BD0B174DE79400F28DC8 /* photo-frame.png */; };
 		DA07BD0E174DF8C300F28DC8 /* Frame.png in Resources */ = {isa = PBXBuildFile; fileRef = DA07BD0D174DF8C300F28DC8 /* Frame.png */; };
 		DA09394516C07FAF001775A4 /* Photos in Resources */ = {isa = PBXBuildFile; fileRef = DA09394416C07FAF001775A4 /* Photos */; };
 		DA09395116C082AE001775A4 /* LeyendaGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA09395016C082AE001775A4 /* LeyendaGridViewController.m */; };
@@ -17,7 +16,6 @@
 		DA09395716C09281001775A4 /* LeyendaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA09395616C09281001775A4 /* LeyendaDetailViewController.m */; };
 		DA09396016C09C5E001775A4 /* MKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA09395F16C09C5E001775A4 /* MKViewController.m */; };
 		DA145A00173F2F4B00ED030C /* LugarGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1459FF173F2F4B00ED030C /* LugarGridViewController.m */; };
-		DA23B88317697AD700CB95AB /* guadalajara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA23B88217697AD700CB95AB /* guadalajara.jpg */; };
 		DA23B88517697DCE00CB95AB /* Centro-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA23B88417697DCE00CB95AB /* Centro-1.jpg */; };
 		DA4DAA7C174353DA00F27732 /* Coordinates.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA4DAA7B174353DA00F27732 /* Coordinates.strings */; };
 		DA5A9789171FAB76008116AA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA5A9788171FAB76008116AA /* Localizable.strings */; };
@@ -46,8 +44,8 @@
 		DA9C4D0D17603A9C00A5549D /* LeyendaGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9C4D0C17603A9C00A5549D /* LeyendaGalleryViewController.m */; };
 		DAF0BF5016CA101900422D8F /* icono57.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF0BF4F16CA101900422D8F /* icono57.png */; };
 		DAF0BF5216CA102400422D8F /* icono114.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF0BF5116CA102400422D8F /* icono114.png */; };
-		DAF0BF5416CA106400422D8F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF0BF5316CA106400422D8F /* Default.png */; };
 		DAF72B9B16DF308400C1DA1F /* LeyendaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF72B9A16DF308400C1DA1F /* LeyendaModel.m */; };
+		DAF860951771866B006FCC45 /* LeyendaGalleryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF860941771866B006FCC45 /* LeyendaGalleryDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +63,6 @@
 		DA07BD06174DC8C700F28DC8 /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
 		DA07BD08174DDCB400F28DC8 /* LeyendaCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendaCollectionHeaderView.h; sourceTree = "<group>"; };
 		DA07BD09174DDCB400F28DC8 /* LeyendaCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeyendaCollectionHeaderView.m; sourceTree = "<group>"; };
-		DA07BD0B174DE79400F28DC8 /* photo-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame.png"; sourceTree = "<group>"; };
 		DA07BD0D174DF8C300F28DC8 /* Frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frame.png; sourceTree = "<group>"; };
 		DA09394416C07FAF001775A4 /* Photos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Photos; path = "../../../../Downloads/ios6ptl-master/ch07/CollectionViewDemo/Photos"; sourceTree = "<group>"; };
 		DA09394F16C082AE001775A4 /* LeyendaGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendaGridViewController.h; sourceTree = "<group>"; };
@@ -78,7 +75,6 @@
 		DA09395F16C09C5E001775A4 /* MKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKViewController.m; sourceTree = "<group>"; };
 		DA1459FE173F2F4B00ED030C /* LugarGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LugarGridViewController.h; sourceTree = "<group>"; };
 		DA1459FF173F2F4B00ED030C /* LugarGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LugarGridViewController.m; sourceTree = "<group>"; };
-		DA23B88217697AD700CB95AB /* guadalajara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guadalajara.jpg; sourceTree = "<group>"; };
 		DA23B88417697DCE00CB95AB /* Centro-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Centro-1.jpg"; sourceTree = "<group>"; };
 		DA4DAA7B174353DA00F27732 /* Coordinates.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Coordinates.strings; sourceTree = "<group>"; };
 		DA5A9788171FAB76008116AA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -117,9 +113,10 @@
 		DA9C4D0C17603A9C00A5549D /* LeyendaGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeyendaGalleryViewController.m; sourceTree = "<group>"; };
 		DAF0BF4F16CA101900422D8F /* icono57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono57.png; sourceTree = "<group>"; };
 		DAF0BF5116CA102400422D8F /* icono114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono114.png; sourceTree = "<group>"; };
-		DAF0BF5316CA106400422D8F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		DAF72B9916DF308400C1DA1F /* LeyendaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendaModel.h; sourceTree = "<group>"; };
 		DAF72B9A16DF308400C1DA1F /* LeyendaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeyendaModel.m; sourceTree = "<group>"; };
+		DAF860931771866A006FCC45 /* LeyendaGalleryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendaGalleryDetailViewController.h; sourceTree = "<group>"; };
+		DAF860941771866B006FCC45 /* LeyendaGalleryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeyendaGalleryDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +148,6 @@
 		DA5CA89016A233F1001FA2D8 = {
 			isa = PBXGroup;
 			children = (
-				DAF0BF5316CA106400422D8F /* Default.png */,
 				DAF0BF5116CA102400422D8F /* icono114.png */,
 				DAF0BF4F16CA101900422D8F /* icono57.png */,
 				DA09394416C07FAF001775A4 /* Photos */,
@@ -159,9 +155,7 @@
 				DA5CA8DC16A28D83001FA2D8 /* MapKit.framework */,
 				DA5CA8DA16A234BC001FA2D8 /* leyendas2.jpg */,
 				DA07BD0D174DF8C300F28DC8 /* Frame.png */,
-				DA07BD0B174DE79400F28DC8 /* photo-frame.png */,
 				DA23B88417697DCE00CB95AB /* Centro-1.jpg */,
-				DA23B88217697AD700CB95AB /* guadalajara.jpg */,
 				DA5CA8A516A233F1001FA2D8 /* Leyenda */,
 				DA5CA8C916A233F1001FA2D8 /* LeyendaTests */,
 				DA5CA89E16A233F1001FA2D8 /* Frameworks */,
@@ -213,6 +207,8 @@
 				DA09395616C09281001775A4 /* LeyendaDetailViewController.m */,
 				DA9C4D0B17603A9C00A5549D /* LeyendaGalleryViewController.h */,
 				DA9C4D0C17603A9C00A5549D /* LeyendaGalleryViewController.m */,
+				DAF860931771866A006FCC45 /* LeyendaGalleryDetailViewController.h */,
+				DAF860941771866B006FCC45 /* LeyendaGalleryDetailViewController.m */,
 				DA07BD05174DC8C700F28DC8 /* MapaViewController.h */,
 				DA07BD06174DC8C700F28DC8 /* MapaViewController.m */,
 				DAF72B9916DF308400C1DA1F /* LeyendaModel.h */,
@@ -342,12 +338,9 @@
 				DA09394516C07FAF001775A4 /* Photos in Resources */,
 				DAF0BF5016CA101900422D8F /* icono57.png in Resources */,
 				DAF0BF5216CA102400422D8F /* icono114.png in Resources */,
-				DAF0BF5416CA106400422D8F /* Default.png in Resources */,
 				DA5A9789171FAB76008116AA /* Localizable.strings in Resources */,
 				DA4DAA7C174353DA00F27732 /* Coordinates.strings in Resources */,
-				DA07BD0C174DE79500F28DC8 /* photo-frame.png in Resources */,
 				DA07BD0E174DF8C300F28DC8 /* Frame.png in Resources */,
-				DA23B88317697AD700CB95AB /* guadalajara.jpg in Resources */,
 				DA23B88517697DCE00CB95AB /* Centro-1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +391,7 @@
 				DA07BD07174DC8C800F28DC8 /* MapaViewController.m in Sources */,
 				DA07BD0A174DDCB500F28DC8 /* LeyendaCollectionHeaderView.m in Sources */,
 				DA9C4D0D17603A9C00A5549D /* LeyendaGalleryViewController.m in Sources */,
+				DAF860951771866B006FCC45 /* LeyendaGalleryDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
