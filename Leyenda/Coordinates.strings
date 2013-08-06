@@ -14,7 +14,7 @@
 "El Diablo en San JuanCoord" = "20.675411,-103.339677";
 "El RelojCoord" = "20.676897,-103.337091";
 "La CampanitaCoord" = "20.680013,-103.349110";
-"La NiñaCoord" = "20.676822,-103.347437";
+"La NinaCoord" = "20.676822,-103.347437";
 "Monja AhorcadaCoord" = "20.679472,-103.346722";
 "Piedra LisaCoord" = "20.679895,-103.350372";
 "Reloj CatedralCoord" = "20.676822,-103.347437";
@@ -29,6 +29,7 @@
 "FundadoresCoord" = "20.677004,-103.343815";
 "Juan ManuelCoord" = "20.678887,-103.34749";
 "Don JuanCoord" ="20.678887,-103.34748";
+"La Heredera de LailaCoord" = "20.676678,-103.344220";
 "JuzgadosCoord" = "20.676679,-103.344220";
 "Museo ArquelogiaCoord" = "20.679934,-103.349894";
 "Museo Lopez PortilloCoord" = "20.679472,-103.346722";
@@ -38,7 +39,7 @@
 "Palacio de Gobierno" = "20.676162,-103.346575";
 "Plaza de ArmasCoord" = "20.676172,-103.347383";
 "Plaza GuadalajaraCoord" = "20.677113,-103.347458";
-"Plaza LiberaciónCoord" = "20.677356,-103.346105";
+"Plaza LiberacionCoord" = "20.677356,-103.346105";
 "Plaza TapatiaCoord"= "20.676353,-103.341342";
 "Prepa JaliscoCoord" = "20.679895,-103.350372";
 "RotondaCoord" = "20.677754,-103.347504";
@@ -46,6 +47,8 @@
 "San DiegoCoord" = "20.681039,-103.350440";
 "San FelipeCoord" = "20.679493,-103.351278";
 "San FranciscoCoord" = "20.672155,-103.347210";
+"Las Campanas Repican Solas" = "20.672155,-103.347211";
+"Castigo a los Frailes" = "20.672155,-103.347212";
 "San JoseCoord" = "20.680344,-103.347521";
 "Santa MonicaCoord" = "20.680013,-103.349110";
 "Santa Maria de GraciaCoord" = "20.677389,-103.344448";

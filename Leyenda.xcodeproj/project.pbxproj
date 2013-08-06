@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F4DAF4517892DFC0070738A /* fondo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F4DAF4417892DFC0070738A /* fondo2.png */; };
+		4F4DAF4717892F3F0070738A /* fondo5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F4DAF4617892F3F0070738A /* fondo5.png */; };
+		4F979F4917AEE9F60030023B /* fondo62.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F979F4817AEE9F60030023B /* fondo62.png */; };
 		DA07BD07174DC8C800F28DC8 /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07BD06174DC8C700F28DC8 /* MapaViewController.m */; };
 		DA07BD0A174DDCB500F28DC8 /* LeyendaCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07BD09174DDCB400F28DC8 /* LeyendaCollectionHeaderView.m */; };
 		DA07BD0E174DF8C300F28DC8 /* Frame.png in Resources */ = {isa = PBXBuildFile; fileRef = DA07BD0D174DF8C300F28DC8 /* Frame.png */; };
@@ -59,12 +62,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F4DAF4417892DFC0070738A /* fondo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo2.png; sourceTree = "<group>"; };
+		4F4DAF4617892F3F0070738A /* fondo5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo5.png; sourceTree = "<group>"; };
+		4F979F4817AEE9F60030023B /* fondo62.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo62.png; sourceTree = "<group>"; };
 		DA07BD05174DC8C700F28DC8 /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
 		DA07BD06174DC8C700F28DC8 /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
 		DA07BD08174DDCB400F28DC8 /* LeyendaCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendaCollectionHeaderView.h; sourceTree = "<group>"; };
 		DA07BD09174DDCB400F28DC8 /* LeyendaCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeyendaCollectionHeaderView.m; sourceTree = "<group>"; };
 		DA07BD0D174DF8C300F28DC8 /* Frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frame.png; sourceTree = "<group>"; };
-		DA09394416C07FAF001775A4 /* Photos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Photos; path = "../../../../Downloads/ios6ptl-master/ch07/CollectionViewDemo/Photos"; sourceTree = "<group>"; };
+		DA09394416C07FAF001775A4 /* Photos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Photos; sourceTree = SOURCE_ROOT; };
 		DA09394F16C082AE001775A4 /* LeyendaGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendaGridViewController.h; sourceTree = "<group>"; };
 		DA09395016C082AE001775A4 /* LeyendaGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeyendaGridViewController.m; sourceTree = "<group>"; };
 		DA09395216C0837D001775A4 /* LeyendaPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendaPhotoCell.h; sourceTree = "<group>"; };
@@ -149,6 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				DAF0BF5116CA102400422D8F /* icono114.png */,
+				4F4DAF4417892DFC0070738A /* fondo2.png */,
+				4F4DAF4617892F3F0070738A /* fondo5.png */,
+				4F979F4817AEE9F60030023B /* fondo62.png */,
 				DAF0BF4F16CA101900422D8F /* icono57.png */,
 				DA09394416C07FAF001775A4 /* Photos */,
 				DA5CA8EB16A3C45D001FA2D8 /* CoreLocation.framework */,
@@ -342,6 +351,9 @@
 				DA4DAA7C174353DA00F27732 /* Coordinates.strings in Resources */,
 				DA07BD0E174DF8C300F28DC8 /* Frame.png in Resources */,
 				DA23B88517697DCE00CB95AB /* Centro-1.jpg in Resources */,
+				4F4DAF4517892DFC0070738A /* fondo2.png in Resources */,
+				4F4DAF4717892F3F0070738A /* fondo5.png in Resources */,
+				4F979F4917AEE9F60030023B /* fondo62.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
