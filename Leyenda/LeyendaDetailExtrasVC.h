@@ -1,0 +1,19 @@
+//
+//  LeyendaDetailExtrasVC.h
+//  Leyenda
+//
+//  Created by Daniel Rodriguez on 8/6/13.
+//  Copyright (c) 2013 Daniel Rodriguez. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "LeyendaModel.h"
+
+@interface LeyendaDetailExtrasVC : UIViewController
+@property (strong, nonatomic) IBOutlet UINavigationItem *leyendaTitle;
+@property (strong, nonatomic) IBOutlet UITextView *leyendaText;
+@property (strong, nonatomic) NSString *photoPath;
+@property (strong, nonatomic) LeyendaModel *leyendaModel;
+
+-(IBAction)galleryAction:(id)sender;
+@end

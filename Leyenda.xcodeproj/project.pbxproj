@@ -19,6 +19,8 @@
 		DA09395716C09281001775A4 /* LeyendaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA09395616C09281001775A4 /* LeyendaDetailViewController.m */; };
 		DA09396016C09C5E001775A4 /* MKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA09395F16C09C5E001775A4 /* MKViewController.m */; };
 		DA145A00173F2F4B00ED030C /* LugarGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1459FF173F2F4B00ED030C /* LugarGridViewController.m */; };
+		DA20FF0E17B1F66600C9E2AB /* LeyendaGridExtrasVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA20FF0D17B1F66600C9E2AB /* LeyendaGridExtrasVC.m */; };
+		DA20FF1117B2067000C9E2AB /* LeyendaDetailExtrasVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA20FF1017B2067000C9E2AB /* LeyendaDetailExtrasVC.m */; };
 		DA23B88517697DCE00CB95AB /* Centro-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA23B88417697DCE00CB95AB /* Centro-1.jpg */; };
 		DA4DAA7C174353DA00F27732 /* Coordinates.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA4DAA7B174353DA00F27732 /* Coordinates.strings */; };
 		DA5A9789171FAB76008116AA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA5A9788171FAB76008116AA /* Localizable.strings */; };
@@ -81,6 +83,10 @@
 		DA09395F16C09C5E001775A4 /* MKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKViewController.m; sourceTree = "<group>"; };
 		DA1459FE173F2F4B00ED030C /* LugarGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LugarGridViewController.h; sourceTree = "<group>"; };
 		DA1459FF173F2F4B00ED030C /* LugarGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LugarGridViewController.m; sourceTree = "<group>"; };
+		DA20FF0C17B1F66600C9E2AB /* LeyendaGridExtrasVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendaGridExtrasVC.h; sourceTree = "<group>"; };
+		DA20FF0D17B1F66600C9E2AB /* LeyendaGridExtrasVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeyendaGridExtrasVC.m; sourceTree = "<group>"; };
+		DA20FF0F17B2067000C9E2AB /* LeyendaDetailExtrasVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeyendaDetailExtrasVC.h; sourceTree = "<group>"; };
+		DA20FF1017B2067000C9E2AB /* LeyendaDetailExtrasVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeyendaDetailExtrasVC.m; sourceTree = "<group>"; };
 		DA23B88417697DCE00CB95AB /* Centro-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Centro-1.jpg"; sourceTree = "<group>"; };
 		DA4DAA7B174353DA00F27732 /* Coordinates.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Coordinates.strings; sourceTree = "<group>"; };
 		DA5A9788171FAB76008116AA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -218,6 +224,10 @@
 				DA9C4D0C17603A9C00A5549D /* LeyendaGalleryViewController.m */,
 				DAF860931771866A006FCC45 /* LeyendaGalleryDetailViewController.h */,
 				DAF860941771866B006FCC45 /* LeyendaGalleryDetailViewController.m */,
+				DA20FF0C17B1F66600C9E2AB /* LeyendaGridExtrasVC.h */,
+				DA20FF0D17B1F66600C9E2AB /* LeyendaGridExtrasVC.m */,
+				DA20FF0F17B2067000C9E2AB /* LeyendaDetailExtrasVC.h */,
+				DA20FF1017B2067000C9E2AB /* LeyendaDetailExtrasVC.m */,
 				DA07BD05174DC8C700F28DC8 /* MapaViewController.h */,
 				DA07BD06174DC8C700F28DC8 /* MapaViewController.m */,
 				DAF72B9916DF308400C1DA1F /* LeyendaModel.h */,
@@ -404,6 +414,8 @@
 				DA07BD0A174DDCB500F28DC8 /* LeyendaCollectionHeaderView.m in Sources */,
 				DA9C4D0D17603A9C00A5549D /* LeyendaGalleryViewController.m in Sources */,
 				DAF860951771866B006FCC45 /* LeyendaGalleryDetailViewController.m in Sources */,
+				DA20FF0E17B1F66600C9E2AB /* LeyendaGridExtrasVC.m in Sources */,
+				DA20FF1117B2067000C9E2AB /* LeyendaDetailExtrasVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

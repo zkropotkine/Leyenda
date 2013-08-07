@@ -57,4 +57,9 @@
     return cell;
 }
 
+- (IBAction)returnHomePage:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

@@ -674,3 +674,88 @@ LEYENDAS: El rincón del diablo
 HISTORIA: El espacio solía ser parte del convento de Santa María de Gracia, luego se construyó  la casa que habitó el conquistador Juan Saldívar y en tiempo de la colonia fue SEDE DE LA SANTA INQUISICIÓN, lo que da razón a las leyendas que circulan a su alrededor.
 Hoy el edificio neogallego es por un lado la secretaría de turismo y  por otro encontramos un hermoso restaurante.
 En contraesquina de la casa encontramos la famosa fuente de los NIÑOS MEONES, y los tradicionales LONCHES AMPARITO.";
+
+
+
+// ===================================================================================================================
+// ==================================================== EXTRAS =======================================================
+// ===================================================================================================================
+
+"¿Que es un centro historico?" = "El centro histórico de un lugar es la parte donde comenzó a poblarse, es a donde llegaron y se establecieron los primeros pobladores.
+
+Es muy importante por que guarda la historia del nacimiento de la ciudad, la historia de sus edificios y sus leyendas permiten ver como era antes y como ha ido cambiando.
+
+El centro histórico es el corazón de la ciudad por las historias que alberga.";
+
+"Creditos" = "Investigación: 
+    Laura Elisa Burgos Mora.
+
+Consultor experto:
+    Dra. Silvia Quezada Camberos.
+
+Desarrollo:
+    Daniel Rodríguez.
+
+Diseño:
+    Laura Elisa Burgos Mora.
+
+Diseño de ícono:
+    Aída Fuentes Burgos.";
+
+"Para saber mas" = "Te recomendamos  visitar estas páginas:
+         
+vive.guadalajara.gob.mx
+            
+www.sic.gob.mx
+            
+www.inah.gob.mx
+            
+www.visitmexico.com
+                
+www.guadalajara.net
+            
+yosoytapatio.blogspot.mx/
+                
+www.facebook.com/yosoytapatioo?fref=ts
+            
+www.facebook.com/GuadalajaraTeAmo?fref=ts
+       
+www.hospiciocabanas.com/ ";
+
+"Bibliografia" = "Árebalo, L. (1986), El corazón de Guadalajara. México. 1986
+
+Consejo nacional de la cultura y las artes. (2011) Sistemas de información cultural. Recuperado de: www.sic.gob.mx
+
+García, H. (2003) Leyendas y personajes populares de Jalisco. México. Secretaria de Cultura.
+
+García, H. (2004) Leyendas y personajes populares de Guadalajara. México. Amat.
+
+Godoy, L. (1974) Cuentan. México. Ediciones del banco industrial de Jalisco.
+
+González, A. (Sf)  Iglesias y edificios eclesiásticos del centro histórico de Guadalajara.
+
+Jiménez, V. (2009) Jalisco, Guía para descubrir los encantos del estado. México: OCEANO
+
+López, E. ( 2001) La cuadrícula en el desarrollo de la ciudad hispanoamericana, Guadalajara, México. México: Universidad de Guadalajara e ITESO.
+
+Espacios Culturales (2013) Recuperado de: http://www.sic.gob.mx/
+
+INAH (2013) Red de museos y monumentos históricos Recuperado de: http://www.inah.gob.mx/museos
+
+Fotos de la Guadalajara de Antaño (SF), Archivo Municipal de Guadalajara.
+
+Que visitar (sf) Recuperado de: vive.guadalajara.gob.mx ";
+
+
+"¿Como llegar al centro de guadalajara?" = "Por tren ligero: 
+    Línea 1, estación: Juárez.
+    Línea 2, estaciones: Juárez, Universidad y San Juan de Dios.
+
+Por macrobus, estaciones:
+    San Juan de Dios, Alameda y La Paz.
+
+Por autobús, rutas:
+    174-a, 500, 275, 231, 110, 190-a, 52-b, 52, 54, 54-a, 52-d, 703-a 703-b, 110-a, 400.
+
+Calandrias:
+    Puedes tomarlas desde el Museo Regional y el templo de San Francisco, son un bonito recorrido por la ciudad.";"
