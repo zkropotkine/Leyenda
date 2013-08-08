@@ -22,5 +22,14 @@
     return self;
 }
 
+-(id)initWithTitle:(NSString *)title image:(UIImage *)image {
+    self = [super init];
+    if (self)
+    {
+        self.image = image;
+        self.title = title;
+    }
+    return self;
+}
 
 @end

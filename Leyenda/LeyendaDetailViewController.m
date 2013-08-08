@@ -50,7 +50,7 @@
     
     UIBarButtonItem *ubicacion = [[UIBarButtonItem alloc] initWithTitle:@"Ubicacíon" style:UIBarButtonSystemItemDone target:self action:@selector(locationAction:)];
     
-    UIBarButtonItem *gallery = [[UIBarButtonItem alloc] initWithTitle:@"Gallería" style:UIBarButtonSystemItemDone target:self action:@selector(galleryAction:)];
+    UIBarButtonItem *gallery = [[UIBarButtonItem alloc] initWithTitle:@"Galería" style:UIBarButtonSystemItemDone target:self action:@selector(galleryAction:)];
     
     
     NSArray *buttons = [[NSArray alloc] initWithObjects:ubicacion, gallery, nil];

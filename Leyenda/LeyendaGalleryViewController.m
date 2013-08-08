@@ -52,7 +52,7 @@
         });
     });
     
-    self.title = @"Galleria";
+    self.title = @"Galeria";
     self.navigationItem.hidesBackButton = false;
     
     
@@ -152,11 +152,29 @@
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath *selectedIndexPath = sender;
+    
+    NSString *photoName = [self.photosList objectAtIndex:selectedIndexPath.row];
+    
+    NSString *photoNameSimple = [[photoName componentsSeparatedByString:@"."] objectAtIndex:0];
+    
+    NSData *data = [photoNameSimple dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+    NSString *cleanPhotoName = [[[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding] stringByReplacingOccurrencesOfString:@"?" withString:@""];
+    NSLog(@"%@", cleanPhotoName);
+    
+    LeyendaGalleryDetailViewController *controller = segue.destinationViewController;
+    
+    
+    NSString *photoFilePath = [[self photosDirectory] stringByAppendingPathComponent:photoName];
+    
+    UIImage *image = [UIImage imageWithContentsOfFile:photoFilePath];
+    
+    controller.leyendaModel = [[LeyendaModel alloc] initWithTitle:photoNameSimple image:image];
 
 }
 
 - (IBAction)returnHomePage:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

@@ -9,7 +9,7 @@
             <objects>
                 <viewController wantsFullScreenLayout="YES" id="2" customClass="LeyendaViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <rect key="frame" x="0.0" y="20" width="568" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fondo5.png" translatesAutoresizingMaskIntoConstraints="NO" id="v2R-rk-9dJ"/>
@@ -529,7 +529,7 @@
             </objects>
             <point key="canvasLocation" x="2535" y="668"/>
         </scene>
-        <!--Leyenda Gallery Detail View Controller - Galleria-->
+        <!--Leyenda Gallery Detail View Controller - Galería-->
         <scene sceneID="Qn3-PA-5WO">
             <objects>
                 <viewController id="lYk-GD-4Mg" customClass="LeyendaGalleryDetailViewController" sceneMemberID="viewController">
@@ -537,22 +537,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Centro-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vSq-Mp-G47">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="320" id="tPy-bn-hfj"/>
-                                </constraints>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mv7-ro-ND9"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vSq-Mp-G47" firstAttribute="leading" secondItem="X0l-DE-koD" secondAttribute="leading" type="default" id="8Fx-dW-sIr"/>
-                            <constraint firstItem="vSq-Mp-G47" firstAttribute="trailing" secondItem="X0l-DE-koD" secondAttribute="trailing" type="default" id="A5b-6s-QAw"/>
-                            <constraint firstItem="vSq-Mp-G47" firstAttribute="top" secondItem="X0l-DE-koD" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Yvl-87-JVj"/>
+                            <constraint firstItem="Mv7-ro-ND9" firstAttribute="top" secondItem="X0l-DE-koD" secondAttribute="top" type="default" id="A7q-67-qDY"/>
+                            <constraint firstItem="Mv7-ro-ND9" firstAttribute="trailing" secondItem="X0l-DE-koD" secondAttribute="trailing" type="default" id="YiN-qr-YFW"/>
+                            <constraint firstItem="Mv7-ro-ND9" firstAttribute="leading" secondItem="X0l-DE-koD" secondAttribute="leading" type="default" id="ZYt-oa-Jjq"/>
+                            <constraint firstItem="Mv7-ro-ND9" firstAttribute="bottom" secondItem="X0l-DE-koD" secondAttribute="bottom" type="default" id="byl-tP-ENt"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Galleria" id="zyM-Aq-UUM"/>
+                    <navigationItem key="navigationItem" title="Galería" id="zyM-Aq-UUM"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="imageView" destination="Mv7-ro-ND9" id="ksJ-4Q-Qhj"/>
+                        <outlet property="leyendaTitle" destination="zyM-Aq-UUM" id="RdE-zG-47d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APk-JN-wuP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -561,7 +562,7 @@
         <!--Leyenda Gallery View Controller - Title-->
         <scene sceneID="GXV-zU-qjC">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="EwJ-Ue-Wbb" customClass="LeyendaGalleryViewController" sceneMemberID="viewController">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" definesPresentationContext="YES" id="EwJ-Ue-Wbb" customClass="LeyendaGalleryViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="7Ub-Ks-5bc">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -711,7 +712,7 @@
             </objects>
             <point key="canvasLocation" x="4142" y="48"/>
         </scene>
-        <!--Leyenda Detail View Controller - Title-->
+        <!--Leyenda Detail View Controller - Galería-->
         <scene sceneID="ZHK-OE-6pz">
             <objects>
                 <viewController id="gLE-DL-ada" customClass="LeyendaDetailViewController" sceneMemberID="viewController">
@@ -730,7 +731,7 @@
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="DPF-1x-Ij8"/>
+                    <navigationItem key="navigationItem" title="Galería" id="DPF-1x-Ij8"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="leyendaTitle" destination="DPF-1x-Ij8" id="Ffd-N8-sqZ"/>
@@ -890,99 +891,14 @@
         <image name="Centro-1.jpg" width="617" height="282"/>
         <image name="fondo5.png" width="748" height="420"/>
     </resources>
-    <classes>
-        <class className="Displaying_Pins_on_a_Map_ViewViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Displaying_Pins_on_a_Map_ViewViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="returnHomePage:"/>
-                <relationship kind="outlet" name="myMapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="LeyendaCollectionHeaderView" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeyendaCollectionHeaderView.h"/>
-        </class>
-        <class className="LeyendaDetailExtrasVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeyendaDetailExtrasVC.h"/>
-            <relationships>
-                <relationship kind="action" name="galleryAction:"/>
-                <relationship kind="outlet" name="leyendaText" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="leyendaTitle" candidateClass="UINavigationItem"/>
-            </relationships>
-        </class>
-        <class className="LeyendaDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeyendaDetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="galleryAction:"/>
-                <relationship kind="action" name="locationAction:"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="leyendaText" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="leyendaTitle" candidateClass="UINavigationItem"/>
-            </relationships>
-        </class>
-        <class className="LeyendaGalleryDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeyendaGalleryDetailViewController.h"/>
-        </class>
-        <class className="LeyendaGalleryViewController" superclassName="UICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeyendaGalleryViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="returnHomePage:"/>
-            </relationships>
-        </class>
-        <class className="LeyendaGridExtrasVC" superclassName="UICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeyendaGridExtrasVC.h"/>
-            <relationships>
-                <relationship kind="action" name="returnHomePage:"/>
-            </relationships>
-        </class>
-        <class className="LeyendaGridViewController" superclassName="UICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeyendaGridViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="returnHomePage:"/>
-            </relationships>
-        </class>
-        <class className="LeyendaPhotoCell" superclassName="UICollectionViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeyendaPhotoCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="photoView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="LeyendaViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeyendaViewController.h"/>
-        </class>
-        <class className="LugarGridViewController" superclassName="UICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LugarGridViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="returnHomePage:"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="UICollectionReusableView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
-        </class>
-        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
-        </class>
-        <class className="UICollectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
-        </class>
-        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="mEn-iz-FQ6"/>
         <segue reference="Grd-19-pcT"/>
         <segue reference="Se2-gf-yMT"/>
+        <segue reference="5n5-rv-qdW"/>
     </inferredMetricsTieBreakers>
 </document>

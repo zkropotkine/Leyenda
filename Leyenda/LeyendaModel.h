@@ -13,6 +13,9 @@
 @property(strong, nonatomic) NSString *description;
 @property(strong, nonatomic) NSString *title;
 @property(assign, nonatomic) CLLocationCoordinate2D location;
+@property(assign, nonatomic) UIImage *image;
 
 -(id)initWithDescription:(NSString *)descr title:(NSString *)title location:(CLLocationCoordinate2D)location;
+
+-(id)initWithTitle:(NSString *)title image:(UIImage *)image;
 @end
