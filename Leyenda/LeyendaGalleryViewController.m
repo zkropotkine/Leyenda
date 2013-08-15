@@ -15,14 +15,17 @@
 @interface LeyendaGalleryViewController ()
 @property (strong, nonatomic) NSArray *photosList;
 @property (strong, nonatomic) NSMutableDictionary *photosCache;
-@property (strong, nonatomic) LeyendaModel *leyendaModel;
 - (IBAction)returnHomePage:(id)sender;
 @end
 
 @implementation LeyendaGalleryViewController
 
 -(NSString*) photosDirectory {
-    return [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Photos/Galeria"];
+    NSLog(@"======= %@", self.leyendaModel.title);
+    //return [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Photos/Galeria"];
+    NSLog(@"===PATH=== %@", [[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Photos/Galeria/"] stringByAppendingPathComponent:self.leyendaModel.title]);
+    
+    return [[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Photos/Galeria/"] stringByAppendingPathComponent:self.leyendaModel.title];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -39,7 +42,7 @@
     [super viewDidLoad];
 	
     NSArray * photosArray = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[self photosDirectory] error:nil];
-    NSArray *photosToShow = [photosArray filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self beginswith[c] '1_'"]];
+    //NSArray *photosToShow = [photosArray filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self beginswith[c] '1_'"]];
     
     
     self.photosCache = [NSMutableDictionary dictionary];
@@ -47,7 +50,8 @@
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.photosList = photosToShow;
+            //self.photosList = photosToShow;
+            self.photosList = photosArray;
             [self.collectionView reloadData];
         });
     });

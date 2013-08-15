@@ -8,6 +8,7 @@
 
 #import "LeyendaDetailViewController.h"
 #import "Displaying_Pins_on_a_Map_ViewViewController.h"
+#import "LeyendaGalleryViewController.h"
 
 @interface LeyendaDetailViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -65,11 +66,13 @@
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSLog(@"%@", NSStringFromClass([[segue destinationViewController] class]));
     NSLog(@"%@", [segue identifier]);
-
     
     if ([[segue identifier] isEqualToString:@"locationSegue"]) {
         Displaying_Pins_on_a_Map_ViewViewController *controller = segue.destinationViewController;
         controller.location = self.leyendaModel.location;
+    } else if ([[segue identifier] isEqualToString:@"gallerySegue"]) {
+        LeyendaGalleryViewController *controller = segue.destinationViewController;
+        controller.leyendaModel =  self.leyendaModel;
     }
 }
 
@@ -83,6 +86,8 @@
 
 -(IBAction)galleryAction:(id)sender {
     NSLog(@"Gallery Action");
+    //LeyendaDetailViewController.LeyendaModel
+    
     [self performSegueWithIdentifier:@"gallerySegue" sender:self];
 }
 

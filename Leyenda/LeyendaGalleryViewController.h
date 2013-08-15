@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LeyendaModel.h"
 
 @interface LeyendaGalleryViewController : UICollectionViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+@property (strong, nonatomic) LeyendaModel *leyendaModel;
 //@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @end
