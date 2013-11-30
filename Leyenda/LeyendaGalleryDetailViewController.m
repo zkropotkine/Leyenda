@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     
-    self.imageView.image = self.leyendaModel.image;
+    //self.imageView.image = self.leyendaModel.image;
     self.leyendaTitle.title = self.leyendaModel.title;
 }
 
